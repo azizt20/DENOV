@@ -1,0 +1,955 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+    <section class="home">
+        <header class="header">
+            <div class="level1">
+                <nav class=" navbar navbar-expand-lg navbar-light py-0 w-100 d-flex justify-content-between align-items-center container-xl">
+                    <a class="navbar-brand text-white logo d-sm-none" href="#">Stanford </a>
+                    <a class="navbar-brand text-white logo d-none d-sm-block" href="#">Stanford University</a>
+
+                    <div class="wrapper d-flex align-items-center">
+                        <div class="links d-lg-flex d-none">
+                            <a class="link"> Students </a>
+                            <a class="link"> Faculty & Staff </a>
+                            <a class="link"> Families </a>
+                            <a class="link"> Visitors </a>
+                            <a class="link"> Alumni </a>
+                            <a class="link"> COVID Resources </a>
+                        </div>
+                        <button
+                                type="button"
+                                class="btn text-white search"
+                                style="white-space: nowrap"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-search"
+                                    viewBox="0 0 16 16">
+                                <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            Search
+                        </button>
+
+                        <button
+                                class="navbar-toggler border-0 text-white"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="25"
+                                    height="25"
+                                    fill="currentColor"
+                                    class="bi bi-list"
+                                    viewBox="0 0 16 16">
+                                <path
+                                        fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            Menu
+                        </button>
+                    </div>
+
+                    <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mobile-link text-center w-100">
+                    <div class="level11 row row-cols-sm-4 row-cols-2 m-0 w-100">
+                        <a class="link"> News </a>
+                        <a class="link"> Events </a>
+                        <a class="link"> Academics </a>
+                        <a class="link"> Reserch </a>
+                        <a class="link"> Health Care </a>
+                        <a class="link"> Campus Life </a>
+                        <a class="link"> Admission </a>
+                        <a class="link"> About </a>
+                    </div>
+
+                    <div class=" level22 d-flex justify-content-center align-items-center w-100 m-0 row row-cols-4 row-cols-sm-6 ">
+                        <a class="link"> Students </a>
+                        <a class="link"> Faculty & Staff </a>
+                        <a class="link"> Families </a>
+                        <a class="link"> Visitors </a>
+                        <a class="link"> Alumni </a>
+                        <a class="link"> COVID Resources </a>
+                    </div>
+                </div>
+            </div>
+            <div class="level2 d-lg-flex d-none">
+                <div class="links d-flex justify-content-center align-items-center w-100">
+                    <div class="links d-flex">
+                        <a class="link"> News </a>
+                        <a class="link"> Events </a>
+                        <a class="link"> Academics </a>
+                        <a class="link"> Reserch </a>
+                        <a class="link"> Health Care </a>
+                        <a class="link"> Campus Life </a>
+                        <a class="link"> Admission </a>
+                        <a class="link"> About </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section
+                class="head_section"
+                style="background-image: url({% static 'img/Parallax.png' %})">
+            <h1 id="stanford">Stanford</h1>
+
+            <div class="position-fixed d-flex justify-content-center align-items-center" id="anchor">
+                <a
+                        href="#covid"
+                        class=" text-white d-flex justify-content-center align-items-center text-decoration-none ">
+                    Explore Web Site
+                    <span class="pl-2 down">
+          <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  fill="currentColor"
+                  class="bi bi-chevron-double-down"
+                  viewBox="0 0 16 16">
+            <path
+                    fill-rule="evenodd"
+                    d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path
+                    fill-rule="evenodd"
+                    d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </span>
+                </a>
+            </div>
+        </section>
+
+        <section class="other-content">
+            <section id="covid">
+                <h2>
+                    Stanford's Response to
+                    <br/>
+                    COVID-19
+                </h2>
+                <p>
+                    Stanford is implementing a phased recovery of university operations. We
+                    are currently in Stage 3 of the restart process.
+                </p>
+                <div class="btn">More about Stanford`s response to COVID-19</div>
+            </section>
+
+            <section class="section-news container text-center">
+                <h2>Stanford News</h2>
+                <p>The latest stories from Stanford</p>
+                <div class="news text-left">
+                    <div class="row">
+                        <div class="col col-md-8 col-lg-6 big">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div
+                                        class="box position-relative"
+                                        style="background-image: url({% static 'img/newsMini.png' %})"
+                                >
+                                    <div class="position-absolute content">
+                                        <div class="title1">HUMANITIES</div>
+                                        <div class="title2">What history can tell us about 2021</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col col-md-8 col-lg-6 big">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div
+                                        class="box position-relative"
+                                        style="background-image: url({% static 'img/newsMini.png' %})"
+                                >
+                                    <div class="position-absolute content">
+                                        <div class="title1">HUMANITIES</div>
+                                        <div class="title2">What history can tell us about 2021</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="btn">More Stanford News</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-event">
+                <div class=" container-xl text-center">
+                    <div class="text text-center">
+                        <h2>Stanford Events</h2>
+                        <p>What’s happening on campus</p>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-lg-4">
+                        <a class="col text-decoration-none">
+                            <div class="box ">
+                                <div
+                                        class="img"
+                                        style="background-image: url({% static 'img/event.jpg' %})"
+                                >
+                                    <div class="date">
+                                        JAN
+                                        <br/>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title1">SEMINAR</div>
+                                    <h4 class="title2">China's Changing Demography</h4>
+                                    <div class="time">4:30 PM</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="col text-decoration-none">
+                            <div class="box ">
+                                <div
+                                        class="img"
+                                        style="background-image: url({% static 'img/event.jpg' %})"
+                                >
+                                    <div class="date">
+                                        JAN
+                                        <br/>
+                                        <span>10</span>
+
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title1">SEMINAR</div>
+                                    <h4 class="title2">China's Changing Demography</h4>
+                                    <div class="time">4:30 PM</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="col text-decoration-none">
+                            <div class="box ">
+                                <div
+                                        class="img"
+                                        style="background-image: url({% static 'img/event.jpg' %})"
+                                >
+                                    <div class="date">
+                                        JAN
+                                        <br/>
+                                        <span>10</span>
+
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title1">SEMINAR</div>
+                                    <h4 class="title2">China's Changing Demography</h4>
+                                    <div class="time">4:30 PM</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="col text-decoration-none">
+                            <div class="box ">
+                                <div class="img"
+                                     style="background-image: url({% static 'img/event.jpg' %})">
+                                    <div class="date">
+                                        JAN
+                                        <br/>
+                                        <span>10</span>
+
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title1">SEMINAR</div>
+                                    <h4 class="title2">China's Changing Demographysadasd sad asd asd asd</h4>
+                                    <div class="time">4:30 PM</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <h3 class="btn">
+                            More Stanford Events
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-academics">
+                <div class="container-xl text-center">
+                    <h2>Academics</h2>
+                    <p class="descr h3">
+                        Preparing students to make meaningful contributions to society as engaged citizens and leaders
+                        in a complex world
+                    </p>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-left">
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Undergraduate Education</h4>
+
+                            <p class="txt">Rich learning experiences that provide a broad liberal arts foundation and
+                                deep
+                                subject-area expertise </p>
+
+                            <a href="" class="more">Undergraduate Education <span> ></span></a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic2.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Graduate Education</h4>
+
+                            <p class="txt">Unsurpassed opportunities to participate in the advancement of entire fields
+                                of
+                                knowledge </p>
+
+                            <a href="" class="more">Undergraduate Education <span> ></span></a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Lifelong learning</h4>
+
+                            <p class="txt">Continuing adult education, executive and professional programs, and programs
+                                for K-12
+                                students </p>
+
+                            <a href="" class="more">Undergraduate Education <span> ></span></a>
+                        </div>
+                    </div>
+
+                    <div class="cotegory text-center">
+                        <p>
+                        <h3>Seven schools in which to pursue your passions</h3>
+                        </p>
+                        <div class="links d-flex justify-content-center">
+                            <a href="" class="link">
+                                <span>Medicine</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Law</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Humanities & Sciences</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Engineering</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Education</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Earth</span>
+                            </a>
+
+                            <a href="" class="link">
+                                <span>Bussiness</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="btn">
+                            More Stanford Academics
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-director position-relative">
+                <img src="{% static 'img/director.jpg' %}" class="img-fluid main w-100" alt="">
+                <div class="hover">
+                    <img src="{% static 'img/director_av .jpg' %}" alt="" class="avatar img-fluid">
+                    <p class="text">
+                        “Here at Stanford, people are constantly in conversation with one another. During my time as the
+                        director of the program in Feminist, Gender, and Sexuality Studies, I saw how faculty and
+                        students in different disciplines were incredibly engaged with their material and with one
+                        another. People are very intellectually generous here.”
+                    </p>
+                    <div class="name">
+                        Heather Hadlock
+                    </div>
+                    <span>
+                        Associate Professor of Music
+                    </span>
+                    <a href="" class="more">More about Heather <span> > </span></a>
+                </div>
+            </section>
+
+            <section class="section-research">
+                <div class="container-xl text-center">
+                    <h2>Research</h2>
+
+                    <p class="descr h3">A culture of collaboration that drives innovative discoveries vital to
+                        our world, our health and our intellectual life</p>
+
+                    <div class="row row-cols-1 row-cols-md-3 for-border">
+                        <div class="col text-center">
+                            <h4>18 Institutes</h4>
+                            <p>cross interdisciplinary boundaries</p>
+                        </div>
+                        <div class="col text-center">
+                            <h4>20 Libraries</h4>
+                            <p>hold over 9.5 million volumes</p>
+                        </div>
+                        <div class="col text-center">
+                            <h4>$1.93 Billion</h4>
+                            <p>sponsored research budget</p>
+                        </div>
+                    </div>
+
+                    <h3>Stanford research for a better world</h3>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 mini">
+                            <a href="" class="text-decoration-none w-100 h-100">
+                                <div class="box">
+                                    <div
+                                            class="img"
+                                            style="background-image: url({% static 'img/news.png' %})"
+                                    ></div>
+                                    <div class="content">
+                                        <div class="title1">SCIENCE & TECHNOLOGY</div>
+                                        <div class="title2">A quantum view of ‘combs’ of light</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="btn">More Stanford Research</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-health">
+                <div class="container-xl text-center">
+                    <h2>Health Care</h2>
+                    <p class="descr h3">Caring for people and advancing human health through innovative research,
+                        education and health
+                        care</p>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-left">
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Undergraduate Education</h4>
+
+                            <p class="txt">Rich learning experiences that provide a broad liberal arts foundation and
+                                deep
+                                subject-area expertise </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic2.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Graduate Education</h4>
+
+                            <p class="txt">Unsurpassed opportunities to participate in the advancement of entire fields
+                                of
+                                knowledge </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Lifelong learning</h4>
+
+                            <p class="txt">Continuing adult education, executive and professional programs, and programs
+                                for K-12
+                                students </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="btn">
+                            More Stanford Academics
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-student position-relative">
+                <img src="{% static 'img/bg-st.jpg' %}" class="img-fluid main w-100" alt="">
+                <div class="hover">
+                    <img src="{% static 'img/student.jpg' %}" alt="" class="avatar img-fluid">
+                    <p class="text">
+                        “Move about the world and make as much of a difference and as much change as you can.”
+                    </p>
+                    <div class="name">
+                        Alma Flores-Pérez
+                    </div>
+                    <span>
+                        Class of 2019, Linguistics and Iberian and Latin American Cultures
+                    </span>
+                    <a href="" class="more">More about Alma <span> > </span></a>
+                </div>
+            </section>
+
+            <section class="section-campus">
+                <div class="container-xl text-center">
+                    <h2>Campus Life</h2>
+                    <p class="descr h3">A thriving community of creative and accomplished people from around the
+                        world</p>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-left">
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Undergraduate Education</h4>
+
+                            <p class="txt">Rich learning experiences that provide a broad liberal arts foundation and
+                                deep
+                                subject-area expertise </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic2.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Graduate Education</h4>
+
+                            <p class="txt">Unsurpassed opportunities to participate in the advancement of entire fields
+                                of
+                                knowledge </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+
+                        <div class="col">
+                            <img src="{% static 'img/academic.jpg' %}" class="img-fluid" alt="">
+
+                            <h4>Lifelong learning</h4>
+
+                            <p class="txt">Continuing adult education, executive and professional programs, and programs
+                                for K-12
+                                students </p>
+
+                            <a href="" class="more">Undergraduate Education </a>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        <div class="btn">
+                            More About Campus Life
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-admission">
+                <div class="container-xl ">
+                    <h2 class="text-center">Admission</h2>
+                    <p class="descr h3">
+                        An extraordinary freedom of opportunity—to explore, to collaborate and to challenge yourself
+                    </p>
+
+                    <div class="img position-relative">
+                        <img src="{% static 'img/Admissions.jpg' %}" class="img-fluid" alt="">
+                        <div class="hover">
+                            <div class="txt w-50">
+                                <span>ADMIT WEEKEND</span> Admits and their families walk to attend Master Class
+                                sessions where they gather to meet and learn from Stanford faculty.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col">
+                            <div class="title h4">
+                                Explore the possibilities of a Stanford education as you map out your college journey.
+                            </div>
+                            <div class="txt">
+                                We look for distinctive students who exhibit an abundance of energy and curiosity in
+                                their classes, activities, projects, research and lives.
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="title h4">
+                                Stanford meets the full financial need of every admitted undergrad who qualifies for
+                                assistance.
+                            </div>
+                            <div class="txt">
+                                Nearly 70% of undergrads receive financial aid. Generally, tuition is covered for
+                                families with incomes below $150,000.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="btn">
+                            More About Admission
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-about">
+                <div class="container-xl text-center">
+                    <h2>About Stanford</h2>
+                    <p class="descr h3">A place for learning, discovery, innovation, expression and discourse</p>
+
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <div class="txt">Opened in</div>
+                            <b>1891</b>
+                        </div>
+                        <div class="col">
+                            <div class="txt">Students</div>
+                            <b>17,246</b>
+                        </div>
+                        <div class="col">
+                            <div class="txt">Faculty</div>
+                            <b>2,279</b>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="btn">
+                            More About Admission
+                        </div>
+                    </div>
+
+
+                </div>
+                <img src="{% static 'img/dala.jpg' %}" alt="" class="dala w-100 img-fluid">
+            </section>
+
+
+            {#<END>-----------------------------------------------------------------------------</END>#}
+        </section>
+
+    </section>
+    <footer class="footer position-relative ">
+        <div class="social ">
+            <div class="container-xl">
+                <div class="links text-right">
+                    <a href="" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                             class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+
+                    <a href="" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                             class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                    <a href="" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                             class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                    </a>
+                    <a href="" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                             class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="container-xl">
+                <div class="row ">
+                    <div class="col-lg-10 row row-cols-lg-5 m-0">
+
+                        <div class="col">
+                            <div class="title">
+                                SCHOOLS
+                            </div>
+                            <a href="" class="link">
+                                Business
+                            </a>
+                            <a href="" class="link">
+                                Earth, Energy & Environmental Sciences
+                            </a>
+                            <a href="" class="link">
+                                Education
+                            </a>
+                            <a href="" class="link">
+                                Engineering
+                            </a>
+                            <a href="" class="link">
+                                Humanities & Sciences
+                            </a>
+                            <a href="" class="link">
+                                Law
+                            </a>
+                            <a href="" class="link">
+                                Medicine
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <div class="title">
+                                DEPARTMENTS
+                            </div>
+                            <a href="" class="link">
+                                Departments A - to Z
+                            </a>
+                            <a href="" class="link">
+                                Interdisciplinary Programs
+                            </a>
+
+                            <div class="title">
+                                RESEARCH
+                            </div>
+                            <a href="" class="link">
+                                Research Centers A - to Z
+                            </a>
+                            <a href="" class="link">
+                                Interdisciplinary Research
+                            </a>
+                            <a href="" class="link">
+                                Libraries
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <div class="title">
+                                HEALTHCARE
+                            </div>
+                            <a href="" class="link">
+                                Stanford Health Care
+                            </a>
+                            <a href="" class="link">
+                                Stanford Children`s Health
+                            </a>
+
+                            <div class="title">
+                                ONLINE LEARNING
+                            </div>
+                            <a href="" class="link">
+                                Stanford Online
+                            </a>
+                        </div>
+
+                        <div class="col">
+
+                            <div class="title">ABOUT STANFORD</div>
+                            <a href="" class="link">Facts</a>
+                            <a href="" class="link">History</a>
+                            <a href="" class="link">Accreditation</a>
+                            <div class="title">ADMISSION</div>
+                            <a href="" class="link">Undergraduate</a>
+                            <a href="" class="link">Graduate</a>
+                            <a href="" class="link">Financial Aid</a>
+                        </div>
+
+                        <div class="col">
+                            <div class="title">RESOURCES</div>
+                            <a href="" class="link">A - to Z Index</a>
+                            <a href="" class="link">Campus Map</a>
+                            <a href="" class="link">Community Engagement</a>
+                            <a href="" class="link">Directory</a>
+                            <a href="" class="link">Stanford Profiles</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-2 cards">
+                        <a href="" class="btn">
+                            Applying
+                        </a>
+                        <a href="" class="btn">
+                            Visiting
+                        </a>
+                        <a href="" class="btn">
+                            Giving
+                        </a>
+                        <a href="" class="btn">
+                            Careers
+                        </a>
+                        <a href="" class="btn">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <div class="container-xl">
+                <div class="row px-3">
+                    <div class="col-2 stfrd text-center">
+                        <span>Stanford</span> <br> <span>University</span>
+                    </div>
+                    <div class="col-10">
+                        <div class="d-flex first">
+                            <a href="">Stanford Home</a>
+                            <a href="">Maps & Directions</a>
+                            <a href="">Search Stanford</a>
+                            <a href="">Emergency Info</a>
+                        </div>
+                        <div class="second d-flex">
+                            <a href="">Terms of Use</a>
+                            <a href="">Privacy</a>
+                            <a href=""> Copyright</a>
+                            <a href="">Trademarks</a>
+                            <a href="">Non-Discrimination</a>
+                            <a href="">Accessibility</a>
+                        </div>
+                        <div>©Copyright Stanford University. Stanford, California 94305.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+{% endblock %}

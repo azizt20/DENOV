@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
 
 body {
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 html {
@@ -34,142 +39,438 @@ h4, .h4 {
   font-weight: 700;
 }
 
-.home {
-  //---------------------------------------------------HEADER---------------------------------------------------
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 1001;
+#local {
+  border-radius: 8px 0px 0px 8px;
+  background: #006766;
+  position: fixed;
+  right: 0;
+  bottom: 120px;
+  z-index: 11;
 
-    .level1 {
-      background-color: #b1040e;
-      height: 55px;
+  img {
+    padding: 10px 8px;
+  }
+}
 
-      .logo {
-        color: #ffffff;
-        font-size: 30px;
-      }
+//---------------------------------------------------HEADER---------------------------------------------------
+.header {
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #006766;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all .7s ease 0s;
 
-      .wrapper {
-        height: 55px;
 
-        .links {
-          height: 55px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-          .link {
-            padding: 0 14px;
-            font-size: 20px;
-            color: #ffffff;
-            text-decoration: none;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
 
-            &:hover {
-              background-color: #820000;
-              color: #f4f4f4;
-              cursor: pointer;
-            }
-          }
-        }
-      }
+  .navbar-brand {
+    line-height: 35px;
+  }
 
-      .search {
-        color: #ffffff !important;
-        font-size: 20px;
-        height: 55px;
 
-        &:hover {
-          background-color: #820000;
-          color: #f4f4f4;
-        }
-      }
+  .level1 {
+    background-color: #fff;
+    height: 50px;
+    transition: background-color .7s ease 0s;
+
+
+    .helper {
+      background-color: #fff;
+      height: 100%;
+      width: 100vw;
+      left: 99%;
+      z-index: 10;
+      transition: background-color .7s ease 0s;
     }
 
-    .level2 {
-      background: #ffffff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      height: 55px;
+    #triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 50px solid #006766;
+      border-right: 35px solid transparent;
+      transition: color .7s ease 0s;
+
+    }
+
+    .wrapper {
+      height: 50px;
 
       .links {
-        height: 55px;
-        align-items: center;
+        height: 50px;
 
         .link {
-          margin: 0 14px;
-          font-size: 23px;
-          color: #000000;
+          padding: 0 7px;
+          font-size: 20px;
+          color: black;
           text-decoration: none;
           height: 50px;
           display: flex;
           align-items: center;
-          border-bottom: 3px solid #ffffffff;
+          white-space: nowrap;
+          font-weight: bold;
 
           &:hover {
-            border-bottom: 3px solid #b1040e;
-            color: #b1040e;
+            //background-color: #008B8A;
+            //color: #f4f4f4;
             cursor: pointer;
-            transition: all 1s ease 0s;
           }
         }
       }
     }
 
-    .collapse {
-      .level11 {
-        .link {
-          padding: 15px 0;
-          text-align: center;
-          border: 1px solid #ccc;
-          background-color: #fff;
-          text-decoration: none;
-          color: #000;
+    .search {
+      color: black !important;
+      font-size: 20px;
+      height: 50px;
+      z-index: 11;
 
-          #f4f4f4 &:hover {
-            background-color: rgb(235, 235, 235);
-            color: #b1040e;
+      &:hover {
+        //background-color: #008B8A;
+        //color: #f4f4f4;
+      }
+    }
+
+
+  }
+
+  .level2 {
+    background: transparent;
+    height: 60px;
+
+    .links {
+      height: 60px;
+      align-items: center;
+
+      .dropdown {
+        position: relative;
+
+        .dropdown-menu {
+          background: rgba(0, 103, 102, 0.75);
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          min-width: 100%;
+
+          .dropdown-item {
+            text-align: center;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            font-size: 20px;
+            color: #fff;
+
+            &:hover {
+              background: #fff;
+              color: black;
+            }
           }
         }
+
       }
 
-      .level22 {
-        min-height: 55px;
-        font-size: 18px;
-        background-color: rgb(235, 235, 235);
+      .link {
+        margin: 0 5px;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        height: 55px;
+        display: flex;
+        align-items: center;
 
-        .link {
-          color: #000;
-          text-decoration: none;
-          padding: 0 16px;
+        &:hover {
+          //color: #fff3cd;
+          //cursor: pointer;
+          //transition: all 1s ease 0s;
+
+          .down {
+            margin-top: 8px;
+            transition: all 0.3s;
+          }
         }
       }
     }
   }
 
+  .collapse {
+    .level11 {
+
+      .dropdown {
+        position: relative;
+
+
+        .dropdown-menu {
+          background: rgb(0, 103, 102);
+          position: absolute;
+          min-width: 100%;
+
+          .dropdown-item {
+            text-align: center;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            color: white;
+
+            &:hover {
+              color: black;
+              background: white;
+            }
+          }
+        }
+
+      }
+
+      .last, .second {
+        .dropdown-menu {
+          right: 0 !important;
+          left: auto !important;
+        }
+      }
+
+      .link {
+        padding: 15px 0;
+        text-align: center;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+          background-color: rgb(235, 235, 235);
+          color: #006766;
+        }
+      }
+    }
+
+    .level22 {
+      min-height: 55px;
+      font-size: 18px;
+      background-color: rgb(235, 235, 235);
+      padding-top: 10px;
+
+      .link {
+        color: #000;
+        text-decoration: none;
+        padding: 0 16px 10px;
+      }
+    }
+  }
+}
+
+.ontop {
+  background: linear-gradient(180deg, #343434 0%, rgba(67, 67, 67, 0.767312) 28.65%, rgba(124, 124, 124, 0.458333) 70.31%, rgba(179, 179, 179, 0) 100%);
+
+  .level1 {
+    background-color: transparent;
+
+    .helper {
+      background-color: transparent;
+    }
+
+    #triangle-bottomleft {
+      width: 40px;
+      height: 0;
+      border-bottom: 0px solid #006766;
+      border-right: 0px solid transparent;
+    }
+
+    .wrapper {
+      .links {
+        .link {
+          color: #ffF;
+
+          &:hover {
+          }
+        }
+      }
+    }
+
+    .search {
+      color: #fff !important;
+      //&:hover {
+      //  background-color: #008B8A;
+      //  color: #f4f4f4;
+      //}
+    }
+  }
+
+  .level2 {
+    background: transparent;
+
+    .links {
+      .dropdown {
+        .dropdown-menu {
+          background: rgba(255, 255, 255, 0.8);
+
+          .dropdown-item {
+            color: black;
+
+            &:hover {
+              background: #fff;
+            }
+          }
+        }
+      }
+
+      .link {
+        color: #fff;
+
+        &:hover {
+          .down {
+            margin-top: 8px;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500.00px) {
+  .header {
+    .level2 {
+      .dropdown {
+        .last {
+          left: 100% !important;
+          transform: translate(-95%, 0%) !important;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1199.98px) {
+  .header {
+    .navbar-brand {
+      h3 {
+        font-size: 24px !important;
+      }
+    }
+
+    .level2 {
+      .links {
+        .link {
+          font-size: 20px;
+
+          img {
+            width: 16px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    .level1 {
+      background: transparent;
+    }
+  }
+}
+
+
+//---------------------------------------------------FOOTER---------------------------------------------------
+.footer {
+  z-index: 10;
+  background: #F4F4F4;
+
+  .main {
+    padding: 35px 0 10px;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        line-height: 1.25em;
+        margin: 15px 0;
+        font-size: 20px;
+        color: #006766;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+
+      .link {
+        margin-bottom: 15px;
+        color: black;
+        font-size: 19px;
+        line-height: 1.21875;
+
+        &:hover {
+          color: #006cb8;
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 15px;
+
+      .btn {
+        font-size: 20px;
+        border: 1px solid #544948;
+        padding: 9px 19px;
+        font-weight: bold;
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+
+        svg {
+          width: auto;
+          height: 36px;
+          color: #544948;
+        }
+
+        &:hover {
+          border: 1px solid #006766;
+
+          svg {
+            color: #006766;
+
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background: #006766;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 24px 0;
+  }
+
+}
+
+
+//HOME----------------HOME----------------------HOME---------------HOME-------------HOME----------------------HOME
+
+.home {
   //---------------------------------------------------HEAD SECTION---------------------------------------------------
   .head_section {
-    height: 100vh !important;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    #stanford {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 140px;
-      color: white;
-      font-weight: bold;
-    }
 
     #anchor {
-      z-index: 10;
-      background: #b1040e;
+      z-index: 1;
+      background: #006766;
       color: white;
       bottom: 0;
       left: 0;
@@ -191,58 +492,23 @@ h4, .h4 {
   //---------------------------------------------------BOGY---------------------------------------------------
   .other-content {
     position: relative;
-    z-index: 1000 !important;
+    z-index: 10 !important;
     background: #fff;
 
     section {
-      scroll-margin-top: 110px;
+      // scroll-margin-top: 110px;
     }
 
-    //---------------------------------------------------COVID---------------------------------------------------
-    #covid {
-      scroll-margin-top: 110px;
-      background: #544948;
-      color: white;
-      padding: 70px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h2 {
-        font-size: 50px;
-        font-weight: 700;
-        width: 50%;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      p {
-        font-size: 30px;
-        width: 60%;
-        text-align: center;
-        padding-bottom: 60px;
-        margin: 0;
-      }
-
-      .btn {
-        background-color: #b1040e;
-        color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        font-weight: 700;
-
-        &:hover {
-          background-color: #820000;
-        }
-      }
-    }
 
     //---------------------------------------------------NEWS---------------------------------------------------
     .section-news {
       padding-top: 70px;
-      padding-bottom: 50px;
+      padding-bottom: 100px;
       text-align: center;
+
+      h2 {
+        color: #006766;
+      }
 
       p {
         font-size: 30px;
@@ -276,11 +542,7 @@ h4, .h4 {
             .content {
               bottom: 0;
               left: 0;
-              background: linear-gradient(
-                              180deg,
-                              rgba(29, 29, 29, 0) 0%,
-                              #000000 100%
-              );
+              background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #000000 100%);
               width: 100%;
               min-height: 140px;
               display: flex;
@@ -352,701 +614,358 @@ h4, .h4 {
 
         .btn {
           color: white;
-          background: #b1040e;
-          padding: 10px 70px;
+          background: #006766;
+          padding: 18px 110px;
           font-size: 23px;
           font-weight: 700;
           margin-top: 10px;
 
           &:hover {
-            background: #820000;
+            background: #008B8A;
           }
         }
       }
     }
 
-    //---------------------------------------------------EVENT---------------------------------------------------
-    .section-event {
-      background-color: #544948;
-      padding: 70px 0;
-
-      p {
-        color: white;
-        font-size: 20px;
-        font-weight: 600;
-      }
+    //---------------------------------------------------UNIVERSITY---------------------------------------------------
+    .section-university {
+      padding-top: 75px;
+      padding-bottom: 100px;
 
       h2 {
-        color: white;
+        color: #006766;
       }
-
-      .row {
-        margin-top: 40px;
-
-        .box {
-          background: white;
-          height: 100%;
-
-          &:hover {
-            cursor: pointer;
-          }
-
-          .img {
-            position: relative;
-            min-height: 250px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            .date {
-              position: absolute;
-              bottom: 0;
-              transform: translate(0, 50%);
-              left: 20px;
-              background-color: #544948;
-              color: white;
-              width: 60px;
-              height: 60px;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              border-radius: 5px;
-
-              span {
-                font-weight: 600;
-              }
-            }
-          }
-
-          .content {
-            text-align: left;
-            padding: 24px;
-
-            .title1 {
-              margin-top: 10px;
-              color: #820000;
-              text-transform: uppercase;
-              font-size: 18px;
-            }
-
-            .title2 {
-              color: black;
-            }
-
-            .time {
-              font-size: 18px;
-              color: black;
-            }
-          }
-        }
-      }
-
-      .btn {
-        color: white;
-        background: #b1040e;
-        padding: 10px 70px;
-        font-size: 23px;
-        font-weight: 700;
-        margin-top: 10px;
-
-        &:hover {
-          background: #820000;
-        }
-      }
-    }
-
-    //---------------------------------------------------ACADEMICS---------------------------------------------------
-    .section-academics {
-      padding-top: 75px;
-      padding-bottom: 75px;
-
-      .descr {
-        padding: 0 100px 40px;
-        font-weight: normal;
-      }
-
-      h4 {
-        font-size: 24px;
-      }
-
-      img {
-        padding-bottom: 20px;
-      }
-
-      .txt {
-        font-size: 19px;
-      }
-
-      .more {
-        color: #487EC9 !important;
-        text-decoration: none;
-
-        &:hover span {
-          margin-left: 10px;
-          transition: all 0.5s ease 0s;
-        }
-      }
-
-      .cotegory {
-        h3 {
-          padding-top: 60px;
-        }
-
-        .links {
-          .link {
-            padding: 8px 10px;
-            font-size: 20px;
-            text-decoration: none;
-            color: #487EC9;
-
-            span {
-              padding-bottom: 5px;
-              border-bottom: 2px solid #fff;
-            }
-
-            &:hover span {
-
-              border-bottom: 2px solid #487EC9;
-              transition: all 0.5s ease 0s;
-            }
-
-            &:not(:last-child) {
-              border-right: 1px solid black;
-            }
-          }
-
-
-        }
-      }
-
-      .btn {
-        background-color: #b1040e;
-        color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        margin-top: 60px;
-        font-weight: 700;
-
-        &:hover {
-          background-color: #820000;
-        }
-      }
-    }
-
-    //---------------------------------------------------DIRECTOR---------------------------------------------------
-    .section-director {
-      display: flex;
-      justify-content: center;
-
-      &:hover .main {
-        filter: blur(10px);
-        transition: all 1s ease 0s;
-
-      }
-
-      &:hover .hover {
-        display: flex;
-        flex-direction: column;
-        transition: all 1s ease 0s;
-
-      }
-
-      .hover {
-        display: none;
-        color: white;
-        z-index: 1000;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        width: 50%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-
-        .avatar {
-          border-radius: 50%;
-          margin-bottom: 20px;
-        }
-
-        .text {
-          font-size: 37px;
-          margin-bottom: 30px;
-          text-align: center;
-        }
-
-        .name {
-          font-size: 25px;
-          font-weight: bold;
-        }
-
-        span {
-          font-style: italic;
-          font-size: 19px;
-        }
-
-        .more {
-          color: white;
-          font-size: 20px;
-          font-weight: bold;
-          cursor: pointer;
-          text-decoration: none;
-
-        }
-      }
-
-    }
-
-    //---------------------------------------------------RESEARCH---------------------------------------------------
-    .section-research {
-      padding-top: 75px;
-      padding-bottom: 75px;
 
       .descr {
         font-weight: normal;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
       }
 
       .for-border {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 30px 0;
-        margin-bottom: 85px;
+        padding: 10px 15px;
+        margin-bottom: 50px;
 
-        h4 {
-          font-size: 37px;
-          font-weight: bold;
-        }
+        .col {
+          padding: 30px 15px;
 
-        p {
-          font-size: 23px;
-          margin: 0;
+          h4 {
+            font-size: 37px;
+            font-weight: bold;
+            color: #006766;
+          }
+
+          p {
+            font-size: 23px;
+            margin: 0;
+          }
         }
       }
 
-      h3 {
-        font-size: 46px;
-        margin-bottom: 60px;
-      }
+      .boxs {
+        .col {
+          padding: 25px;
 
-      .mini {
-        margin-bottom: 40px;
-        text-align: start;
+          .box {
+            height: 300px;
+            position: relative;
+            color: #006766;
+            border: 1px solid #006766;
+            width: 100%;
+
+            .title {
+              font-size: 25px;
+              color: #006766;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+      }
+    }
+
+    //---------------------------------------------------RESEARCH---------------------------------------------------
+    .section-fakultet {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background: #F4F4F4;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      .list {
+        .col {
+          padding: 25px;
+        }
 
         .box {
-          height: 100%;
+          text-decoration: none !important;
           box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-          border-radius: 7px;
+          border: 1px solid black;
+          border-radius: 5px;
 
           &:hover {
             box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
-
             transition: all 0.5s ease 0s;
-
-            .title2 {
-              color: #006cb8;
-              transition: all 0.5s ease 0s;
-            }
-          }
-
-          .img {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 200px;
           }
 
           .content {
-            padding: 24px;
-          }
+            padding: 30px;
+            text-align: center;
 
-          .title1 {
-            color: #b1040e;
-            text-transform: uppercase;
-            font-size: 17px;
-            font-weight: 700;
-          }
+            .title {
+              font-size: 20px;
+              color: #444444;
+              font-weight: bold;
+            }
 
-          .title2 {
-            font-size: 20px;
-            color: black;
-            font-weight: 700;
+            .text {
+              font-size: 20px;
+              color: black;
+            }
           }
         }
       }
 
       .btn {
-        background-color: #b1040e;
         color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        margin-top: 20px;
+        background: #006766;
+        padding: 18px 110px;
+        font-size: 23px;
         font-weight: 700;
+        margin-top: 40px;
 
         &:hover {
-          background-color: #820000;
+          background: #008B8A;
         }
       }
-
     }
 
-    //---------------------------------------------------HEALTH---------------------------------------------------
-    .section-health {
-      padding-top: 75px;
-      padding-bottom: 75px;
-      background: #F9F6EF;
+    .section-info {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-      .descr {
-        font-weight: normal;
-        margin-bottom: 60px;
-      }
-
-      h4 {
-        font-size: 24px;
-      }
-
-      img {
-        padding-bottom: 20px;
-      }
-
-      .txt {
-        font-size: 19px;
-      }
-
-      .more {
-        color: #487EC9 !important;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-
-      }
-
-      .btn {
-        background-color: #b1040e;
-        color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        margin-top: 60px;
-        font-weight: 700;
-
-        &:hover {
-          background-color: #820000;
-        }
-      }
-
-    }
-
-    //---------------------------------------------------STUDENT---------------------------------------------------
-    .section-student {
-      display: flex;
-      justify-content: center;
-
-      &:hover .main {
-        filter: blur(10px);
-      }
-
-      &:hover .hover {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .hover {
-        display: none;
-        color: white;
-        z-index: 1000;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        width: 50%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-
-        .avatar {
-          border-radius: 50%;
-          margin-bottom: 20px;
-        }
-
-        .text {
-          font-size: 37px;
-          margin-bottom: 30px;
-          text-align: center;
-        }
-
-        .name {
-          font-size: 25px;
-          font-weight: bold;
-        }
-
-        span {
-          font-style: italic;
-          font-size: 19px;
-        }
-
-        .more {
-          color: white;
-          font-size: 20px;
-          font-weight: bold;
-          cursor: pointer;
-          text-decoration: none;
-
-        }
-      }
-
-    }
-
-    //---------------------------------------------------CAMPUS---------------------------------------------------
-    .section-campus {
-      padding-top: 75px;
-      padding-bottom: 75px;
-
-      .descr {
-        font-weight: normal;
-        margin-bottom: 60px;
-      }
-
-      h4 {
-        font-size: 24px;
-      }
-
-      img {
-        padding-bottom: 20px;
-      }
-
-      .txt {
-        font-size: 19px;
-      }
-
-      .more {
-        color: #487EC9 !important;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-
-      }
-
-      .btn {
-        background-color: #b1040e;
-        color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        margin-top: 60px;
-        font-weight: 700;
-
-        &:hover {
-          background-color: #820000;
-        }
-      }
-
-    }
-
-    //---------------------------------------------------HEALTH---------------------------------------------------
-    .section-admission {
-      padding-top: 75px;
-      padding-bottom: 75px;
-      background: #F9F6EF;
-
-      .descr {
-        font-weight: normal;
-        margin-bottom: 60px;
-        text-align: center;
-      }
-
-      .img {
-        margin-bottom: 40px;
-
-        &:hover .hover {
-          display: block;
-        }
-
-        .hover {
-          text-align: start;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          background: linear-gradient(180deg, transparent 0, #000 75%);
-          display: none;
-          color: white;
-          width: 100%;
-
-          .txt {
-            font-size: 19px;
-            padding: 16px;
-          }
-        }
-      }
 
       .title {
-        font-size: 23px !important;
+        font-weight: bold;
+        font-size: 35px;
       }
 
-      .txt {
-        font-size: 19px !important;
+      .infos {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .title-topic {
+          font-weight: bold;
+          font-size: 50px;
+          color: #006766;
+        }
+
+        .info {
+          padding: 20px 0;
+
+          .title-about {
+            font-weight: bold;
+            font-size: 25px;
+          }
+
+          .txt {
+            font-size: 20px;
+          }
+        }
       }
 
       .btn {
-        background-color: #b1040e;
         color: white;
-        font-size: 20px;
-        padding: 10px 30px !important;
-        margin-top: 60px;
+        background: #006766;
+        padding: 18px 110px;
+        font-size: 23px;
         font-weight: 700;
+        margin-top: 10px;
 
         &:hover {
-          background-color: #820000;
+          background: #008B8A;
+        }
+      }
+    }
+
+  }
+}
+
+//---------------------------------------------------responsive---------------------------------------------------
+@media (max-width: 575.98px) {
+  h2, .h2 {
+    font-size: 40px;
+  }
+  h3, .h3 {
+    font-size: 26px;
+  }
+  h4, .h4 {
+    font-size: 18px;
+  }
+  .home {
+    .other-content {
+      .section-news {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .news {
+          .btn {
+            padding: 18px 40px;
+          }
         }
       }
 
-    }
-
-    //---------------------------------------------------CAMPUS---------------------------------------------------
-    .section-about {
-      .container-xl {
-        padding-top: 75px;
-        padding-bottom: 75px;
+      .section-university {
+        padding-top: 50px;
+        padding-bottom: 50px;
 
         .descr {
-          font-weight: normal;
-          margin-bottom: 60px;
+          margin-bottom: 40px;
         }
 
-        .txt {
-          font-size: 19px;
+        .boxs {
+          .col {
+            padding: 10px;
+
+            .box {
+              height: 200px;
+
+              .title {
+                font-size: 20px;
+                padding-bottom: 30px;
+              }
+            }
+          }
         }
+      }
 
-        b {
-          font-size: 37px;
-          font-weight: bolder;
-        }
-
-
+      .section-fakultet {
         .btn {
-          background-color: #b1040e;
-          color: white;
-          font-size: 20px;
-          padding: 10px 30px !important;
-          margin-top: 60px;
-          font-weight: 700;
+          padding: 18px 40px;
+          margin-top: 20px;
+        }
+      }
 
-          &:hover {
-            background-color: #820000;
+      .section-info {
+        .infos {
+          .title-topic {
+            font-size: 30px;
+          }
+
+          .info {
+            .title-about {
+              font-size: 20px;
+            }
+
+            .txt {
+              font-size: 18px;
+            }
           }
         }
 
+        .btn {
+          padding: 18px 40px;
+        }
       }
     }
   }
 }
 
-//---------------------------------------------------FOOTER---------------------------------------------------
 
-.footer {
-  z-index: 100;
+//preStudent----------------preStudent----------------------preStudent---------------preStudent-------------
 
-  .social {
-    background: #F4F4F4;
-    padding: 20px 0;
+.section-prestudent {
+  padding-top: 110px;
 
-    .links {
-      .link {
-        padding-left: 10px;
-        text-decoration: none;
+  .section-guide {
+    padding-top: 70px;
 
-        svg {
-          width: auto;
-          height: 36px;
-          color: black;
-        }
-      }
+    .title {
+      color: #006766;
+      padding-bottom: 40px;
     }
-  }
 
-  .main {
-    background: white;
-    padding: 35px 0 10px;
+    .content {
+      padding: 70px 0;
 
-    .col {
-      display: flex;
-      flex-direction: column;
-
-      .title {
-        line-height: 1.25em;
-        margin: 15px 0;
-        font-size: 20px;
-        color: #820000;
-        text-transform: uppercase;
-        font-weight: bolder;
-      }
-
-      .link {
-        margin-bottom: 15px;
+      .txt{
+        font-size: 25px;
         color: black;
-        font-size: 19px;
-        line-height: 1.21875;
+        margin-bottom: 70px;
+      }
 
-        &:hover {
-          color: #006cb8;
+
+      .questions {
+        .question {
+          background: #006766;
+          width: 100%;
+          font-weight: bold;
+          border: 1px solid #006766;
+          border-radius: 20px;
+          margin-bottom: 40px;
+
+          a {
+            text-decoration: none;
+
+            .arrow-up {
+                transform: rotate(0deg);
+                transition: all .7s ease 0s;
+              }
+            &[aria-expanded="true"] {
+              .arrow-up {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+
+          .row {
+            padding: 25px 50px;
+
+            .qq {
+              font-size: 30px;
+              line-height: 40px;
+              color: #ffffFF;
+            }
+
+
+          }
+
+          .res {
+            background: #ffffFF;
+            font-size: 25px;
+            border-radius: 0 0 20px 20px;
+            font-weight: normal;
+
+            p:last-child {
+              margin: 0;
+            }
+
+            .txt {
+              padding: 40px;
+              margin: 0;
+            }
+
+            .closee {
+              width: 100%;
+              font-weight: bold;
+              font-size: 30px;
+              color: #ffffFF;
+              border-radius: 0 0 20px 20px;
+              background: #006766;
+              text-align: right;
+              padding: 25px 50px;
+
+
+            }
+          }
+
+
         }
       }
     }
 
-    .cards {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-bottom: 15px;
 
-      .btn {
-        color: #544948;
-        font-size: 20px;
-        border: 1px solid #544948;
-        padding: 9px 19px;
-        font-weight: bold;
-        width: 100%;
-        box-shadow: 0 0 10px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%);
-
-        &:hover {
-          color: #8C1515;
-          border: 1px solid #8C1515;
-
-        }
-      }
-    }
   }
-
-  .bottom {
-    background: #8C1515;
-    color: white;
-    padding: 24px 0;
-
-    .stfrd span:first-child {
-      font-size: 32px;
-      font-weight: bolder;
-      line-height: .75;
-    }
-
-    .stfrd span:last-child {
-      font-size: 20px;
-      line-height: .75;
-    }
-
-    .first a {
-      margin-right: 28px;
-      margin-bottom: 8px;
-      font-size: 18px;
-      text-transform: uppercase;
-      color: white;
-      font-weight: bold;
-    }
-
-    .second a {
-      margin-right: 28px;
-      margin-bottom: 10px;
-      font-size: 16px;
-      color: white;
-    }
-  }
-
 }

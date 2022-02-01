@@ -1,0 +1,225 @@
+{% load static %}
+
+<header id="header" class="header ">
+    <nav class=" navbar navbar-expand-lg navbar-light py-0 w-100 row mx-auto container-xl">
+        <div class="col-4 p-0 d-flex align-items-center">
+            <img src="{% static 'img/Logo.png' %}" class="mr-3 logo" width="80px" height="80px" alt="">
+            <a class="navbar-brand text-white logo d-lg-none  " href="{% url 'home' %}"><h3 class="m-0">DENOV</h3></a>
+            <a class="navbar-brand text-white logo d-none d-lg-block  " href="{% url 'home' %}"><h3 class="m-0">Denov
+                tadbirkorlik va <br> pedagogika instituti</h3></a>
+        </div>
+
+        <div class="col-8 p-0">
+            <div class="level1 position-relative">
+                <div class="position-absolute helper d-none d-lg-block"></div>
+                <div class="wrapper d-flex align-items-center justify-content-end justify-content-lg-between  ">
+                    <div class="d-none d-lg-flex" id="triangle-bottomleft"></div>
+                    <div class="links d-lg-flex justify-content-between d-none w-100">
+                        <a class="link"> Документы </a>
+                        <a class="link"> Законы </a>
+                        <a class="link"> Указы </a>
+                        <a class="link"> Программы </a>
+                        <a class="link"> Связи </a>
+                        <button type="button" class="btn text-white search" style="white-space: nowrap"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            Search
+                        </button>
+                    </div>
+
+
+                    <button type="button" class="btn text-white d-block d-lg-none"
+                            style="white-space: nowrap"
+                            data-toggle="modal"
+                            data-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                             class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+
+                    <button class="navbar-toggler border-0 text-white" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                             class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="level2 d-lg-flex d-none pl-2">
+                <div class="links d-flex justify-content-between align-items-center w-100 pl-4">
+                    <div class="dropdown">
+                        <a class="  link " href="#" id="navbarDropdown1" role="button"
+                           data-toggle="dropdown" aria-expanded="false">
+                            Новости
+                            <span class="pl-2 down">
+                                        <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
+                                    </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="#">События</a>
+                            <a class="dropdown-item" href="#">Объявления</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a class="  link " href="#" id="navbarDropdown2" role="button"
+                           data-toggle="dropdown" aria-expanded="false">
+                            Институт
+                            <span class="pl-2 down">
+                                        <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
+                                    </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="#">История института</a>
+                            <a class="dropdown-item" href="#">Положения института</a>
+                            <a class="dropdown-item" href="#">Руководство</a>
+                            <a class="dropdown-item" href="#">Основные отделы</a>
+                            <a class="dropdown-item" href="#">Факультеты</a>
+                            <a class="dropdown-item" href="#">Кафедры</a>
+                            <a class="dropdown-item" href="#">Фотогалерея</a>
+                            <a class="dropdown-item" href="#">Видеогалерея</a>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+
+                        <a class="  link " href="#" id="navbarDropdown3" role="button"
+                           data-toggle="dropdown" aria-expanded="false">
+                            Деятельность
+                            <span class="pl-2 down">
+                                        <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
+                                    </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" href="#">Научная деятельность</a>
+                            <a class="dropdown-item" href="#">Основные отделы</a>
+                            <a class="dropdown-item" href="#">Международные связи</a>
+                            <a class="dropdown-item" href="#">Духовно-просветительская <br> деятельность</a>
+                            <a class="dropdown-item" href="#">Финансовая деятельность</a>
+                            <a class="dropdown-item" href="#">Коммерциализация научных и <br> инновационных
+                                разработок</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+
+                        <a class="  link " href="#" id="navbarDropdown4" role="button"
+                           data-toggle="dropdown" aria-expanded="false">
+                            Студенты
+                            <span class="pl-2 down">
+                                         <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
+                                     </span>
+                        </a>
+                        <div class="dropdown-menu last" aria-labelledby="navbarDropdown4">
+                            <a class="dropdown-item" href="#">Одаренные студенты</a>
+                            <a class="dropdown-item" href="#">Степень бакалавра</a>
+                            <a class="dropdown-item" href="#">Степень магистра</a>
+                            <a class="dropdown-item" href="#">Иностранные студенты</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mobile-link text-center w-100">
+            <div class="level11 row row-cols-sm-4 row-cols-2 m-0 w-100">
+                <div class="dropdown first">
+                    <a class="nav-link  link " href="#" id="navbarDropdown11" role="button"
+                       data-toggle="dropdown" aria-expanded="false">
+                        Новости
+                    </a>
+                    <div class="dropdown-menu  " aria-labelledby="navbarDropdown11">
+                        <a class="dropdown-item" href="#">События</a>
+                        <a class="dropdown-item" href="#">Объявления</a>
+                    </div>
+                </div>
+
+                <div class="dropdown second">
+                    <a class="nav-link  link " href="#" id="navbarDropdown22" role="button"
+                       data-toggle="dropdown" aria-expanded="false">
+                        Институт
+                    </a>
+                    <div class="dropdown-menu  " aria-labelledby="navbarDropdown22">
+                        <a class="dropdown-item" href="#">История института</a>
+                        <a class="dropdown-item" href="#">Положения института</a>
+                        <a class="dropdown-item" href="#">Руководство</a>
+                        <a class="dropdown-item" href="#">Основные отделы</a>
+                        <a class="dropdown-item" href="#">Факультеты</a>
+                        <a class="dropdown-item" href="#">Кафедры</a>
+                        <a class="dropdown-item" href="#">Фотогалерея</a>
+                        <a class="dropdown-item" href="#">Видеогалерея</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown third">
+
+                    <a class="nav-link  link " href="#" id="navbarDropdown33" role="button"
+                       data-toggle="dropdown" aria-expanded="false">
+                        Деятельность
+                    </a>
+                    <div class="dropdown-menu  " aria-labelledby="navbarDropdown33">
+                        <a class="dropdown-item" href="#">Научная деятельность</a>
+                        <a class="dropdown-item" href="#">Основные отделы</a>
+                        <a class="dropdown-item" href="#">Международные связи</a>
+                        <a class="dropdown-item" href="#">Духовно-просветительская <br> деятельность</a>
+                        <a class="dropdown-item" href="#">Финансовая деятельность</a>
+                        <a class="dropdown-item" href="#">Коммерциализация научных и <br> инновационных
+                            разработок</a>
+                    </div>
+                </div>
+
+                <div class="dropdown last">
+
+                    <a class="nav-link  link " href="#" id="navbarDropdown44" role="button"
+                       data-toggle="dropdown" aria-expanded="false">
+                        Студенты
+                    </a>
+                    <div class="dropdown-menu  " aria-labelledby="navbarDropdown44">
+                        <a class="dropdown-item" href="#">Одаренные студенты</a>
+                        <a class="dropdown-item" href="#">Степень бакалавра</a>
+                        <a class="dropdown-item" href="#">Степень магистра</a>
+                        <a class="dropdown-item" href="#">Иностранные студенты</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                    class=" level22 d-flex justify-content-center align-items-center w-100 m-0 row row-cols-3 row-cols-sm-5 ">
+                <a class="link"> Документы </a>
+                <a class="link"> Законы </a>
+                <a class="link"> Указы </a>
+                <a class="link"> Программы </a>
+                <a class="link"> Связи </a>
+            </div>
+        </div>
+    </div>
+
+</header>

@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import PreStudents, Questions
 
-# Register your models here.
+admin.site.register(PreStudents)
+admin.site.register(Questions)

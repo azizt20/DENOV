@@ -1,6 +1,7 @@
 from django.urls import path, include
 
-from .views import index
+from .views import index, preStudents
 urlpatterns = [
-    path('', index)
+    path('', index, name='home'),
+    path('prestudents/', preStudents, name='preStudents'),
 ]

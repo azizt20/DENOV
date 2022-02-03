@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} E`LONLAR {% endblock %}
+{% block content %}
+    {% for c in content %}
+
+
+        <section class="section-ads">
+            <section class="section-content">
+                <div class="container-xl">
+                    <h2 class="title text-center">{{ c.title }}</h2>
+                    <div class="descr text-center">
+                        Самые последние объявления нашего университета
+                    </div>
+
+                    <div class="cotegories">
+                        {% for category in c.category_set.all %}
+                            <div class="category">
+                                <div class="cat-name">
+                                    {{ category.name }}
+                                </div>
+                                <div class="row row-cols-1 row-cols-lg-3 ads">
+                                    {% for ad in category.ad_set.all %}
+
+                                        <div class="col ad">
+                                            <img src="{{ ad.image.url }}" class="img-fluid w-100" alt="">
+                                            <div class="title">{{ ad.title }}</div>
+                                            <div class="descrip">{{ ad.description }}</div>
+                                            <a href="{% url 'ad' ad.pk %}" class="link">Подробнее об объявлении ></a>
+                                        </div>
+
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    {% endfor %}
+
+{% endblock %}

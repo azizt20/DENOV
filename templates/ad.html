@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} {{ c.title }} {% endblock %}
+{% block content %}
+
+
+
+    <section class="section-ad">
+        <section class="section-content">
+            <div class="container-xl">
+                <span class="text-left">{{ c.ad }}</span>
+                <h2 class="title text-center">
+                    {{ c.title }}
+                </h2>
+                <div class="descr">
+                    {{ c.description }}
+                </div>
+                <p>
+                    <img src="{{ c.image.url }}" class="img-fluid w-100" alt="">
+                </p>
+                <p>
+                    {{ c.content | safe }}
+                </p>
+
+
+            </div>
+        </section>
+    </section>
+
+{% endblock %}

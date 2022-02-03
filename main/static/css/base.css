@@ -643,6 +643,11 @@ h4, .h4 {
   text-transform: uppercase;
 }
 
+.home .other-content .section-university .boxs .col .box:hover {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+}
+
 .home .other-content .section-fakultet {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -883,5 +888,262 @@ h4, .h4 {
   background: #006766;
   text-align: right;
   padding: 25px 50px;
+}
+
+.section-quotas {
+  padding-top: 110px;
+}
+
+.section-quotas .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-quotas .section-content h2 {
+  color: #006766;
+  padding-bottom: 70px;
+}
+
+.section-quotas .section-content .table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.section-programs {
+  padding-top: 110px;
+}
+
+.section-programs .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-programs .section-content h2 {
+  color: #006766;
+  padding-bottom: 70px;
+}
+
+.section-programs .section-content .content {
+  padding-top: 70px;
+  font-size: 25px;
+}
+
+.section-programs .section-content .scheme {
+  font-size: 25px;
+}
+
+.section-programs .section-content .table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.section-programs {
+  padding-top: 110px;
+}
+
+.section-programs .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-programs .section-content h2 {
+  color: #006766;
+  padding-bottom: 70px;
+}
+
+.section-programs .section-content .descr {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-programs .section-content .cotegories {
+  padding-bottom: 200px;
+}
+
+.section-programs .section-content .cotegories .category {
+  border-top: 1px solid #CECECE;
+}
+
+.section-programs .section-content .table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.section-ads {
+  padding-top: 110px;
+}
+
+.section-ads .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-ads .section-content h2 {
+  color: #006766;
+}
+
+.section-ads .section-content .descr {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-ads .section-content .cotegories {
+  padding-bottom: 200px;
+}
+
+.section-ads .section-content .cotegories .category {
+  border-top: 1px solid #CECECE;
+  margin-top: 30px;
+}
+
+.section-ads .section-content .cotegories .category .cat-name {
+  color: #444444;
+  font-size: 40px;
+  padding: 30px 50px;
+  font-weight: bold;
+}
+
+.section-ads .section-content .cotegories .category .ads .ad {
+  padding: 0 20px 30px;
+}
+
+.section-ads .section-content .cotegories .category .ads .ad img {
+  padding-bottom: 25px;
+}
+
+.section-ads .section-content .cotegories .category .ads .ad .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.section-ads .section-content .cotegories .category .ads .ad .descrip {
+  margin-bottom: 30px;
+}
+
+.section-ads .section-content .cotegories .category .ads .ad .link {
+  font-weight: bold;
+  color: #487EC9;
+}
+
+.section-ads .section-content .table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.section-ad {
+  padding-top: 110px;
+}
+
+.section-ad .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-ad .section-content h2 {
+  color: #006766;
+}
+
+.section-ad .section-content .descr {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-ad .section-content .cotegories {
+  padding-bottom: 200px;
+}
+
+.section-ad .section-content .cotegories .category {
+  border-top: 1px solid #CECECE;
+  margin-top: 30px;
+}
+
+.section-ad .section-content .cotegories .category .cat-name {
+  color: #444444;
+  font-size: 40px;
+  padding: 30px 50px;
+  font-weight: bold;
+}
+
+.section-ad .section-content .cotegories .category .ads .ad {
+  padding: 0 20px 30px;
+}
+
+.section-ad .section-content .cotegories .category .ads .ad img {
+  padding-bottom: 25px;
+}
+
+.section-ad .section-content .cotegories .category .ads .ad .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.section-ad .section-content .cotegories .category .ads .ad .descrip {
+  margin-bottom: 30px;
+}
+
+.section-ad .section-content .cotegories .category .ads .ad .link {
+  font-weight: bold;
+  color: #487EC9;
+}
+
+.section-ad .section-content .table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.section-department {
+  padding-top: 110px;
+}
+
+.section-department .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-department .section-content h2 {
+  color: #006766;
+}
+
+.section-department .section-content .descr {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-department .section-content .content .departments .col {
+  padding: 20px;
+}
+
+.section-department .section-content .content .departments .col .box {
+  height: 300px;
+  position: relative;
+  color: #006766;
+  border: 1px solid #006766;
+  width: 100%;
+}
+
+.section-department .section-content .content .departments .col .box .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #006766;
+  text-align: center;
+  height: 140px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.section-department .section-content .content .departments .col .box:hover {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
 }
 /*# sourceMappingURL=base.css.map */

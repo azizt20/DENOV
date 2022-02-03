@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% load static %}
-{% block title %} КАФЕДРЫ ДТПИ {% endblock %}
+{% block title %} Markaz Bo'limlari {% endblock %}
 {% block content %}
 
-    <section class="section-department" id="top">
+    <section class="section-central-department" id="top">
         <section class="section-departments" >
             <div class="container-xl">
-                <h2 class="text-center title">КАФЕДРЫ ДТПИ</h2>
+                <h2 class="text-center title">Markaz Bo'limlari</h2>
                 <div class="descr">
-                    Нажмите на кафедру, чтобы узнать подробности
+                    Узнайте подробности
                 </div>
 
                 <div class="content">
@@ -55,18 +55,16 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8 infos">
-                                    <div class="info"><span>"{{ c.name }}" kafedra mundiri :</span> {{ c.boss }}</div>
+                                    <div class="info"><span>Bo‘lim boshlig‘i:</span> {{ c.boss }}</div>
                                     <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
                                     <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
                                     <div class="info"><span>E-mail:</span> {{ c.email }}</div>
+                                    <div class="info"><span>Web-sayt:</span> {{ c.web }}</div>
                                     <div class="info"><span>Manzil:</span> {{ c.location }}</div>
                                 </div>
                             </div>
 
                             <div class="txt">
-
-                                <h3 class="text-center history mb-5">Kafedra tarixi</h3>
-
                                 {{ c.content |safe }}
 
                                 <div class="text-center mt-5">

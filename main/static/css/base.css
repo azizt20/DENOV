@@ -1093,29 +1093,48 @@ h4, .h4 {
   overflow-x: auto;
 }
 
-.section-department {
+.section-central-department {
   padding-top: 110px;
 }
 
-.section-department .section-content {
+.section-central-department .section-departments {
   padding-top: 70px;
   padding-bottom: 70px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section-department .section-content h2 {
+.section-central-department .section-departments h2 {
   color: #006766;
 }
 
-.section-department .section-content .descr {
+.section-central-department .section-departments .descr {
   font-size: 30px;
   color: #444444;
+  text-align: center;
+  padding-top: 20px;
 }
 
-.section-department .section-content .content .departments .col {
+.section-central-department .section-departments .content .departments {
+  border: 0;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-central-department .section-departments .content .departments .nav-link {
   padding: 20px;
+  border: 0;
+  -webkit-transition: all .7s ease 0s;
+  transition: all .7s ease 0s;
 }
 
-.section-department .section-content .content .departments .col .box {
+.section-central-department .section-departments .content .departments .nav-link .box {
   height: 300px;
   position: relative;
   color: #006766;
@@ -1123,7 +1142,7 @@ h4, .h4 {
   width: 100%;
 }
 
-.section-department .section-content .content .departments .col .box .title {
+.section-central-department .section-departments .content .departments .nav-link .box .title {
   font-size: 20px;
   font-weight: bold;
   color: #006766;
@@ -1142,8 +1161,386 @@ h4, .h4 {
   padding: 0 10px;
 }
 
-.section-department .section-content .content .departments .col .box:hover {
+.section-central-department .section-departments .content .departments .nav-link:hover {
+  padding: 10px 20px 30px;
+  -webkit-transition: all .7s ease 0s;
+  transition: all .7s ease 0s;
+}
+
+.section-central-department .section-departments .content .departments .nav-link:hover .box {
   -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+}
+
+.section-central-department .section-departments .content .departments .active {
+  padding: 10px 20px 30px !important;
+}
+
+.section-central-department .section-departments .content .departments .active .box {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+}
+
+.section-central-department .section-department-content {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-central-department .section-department-content .department-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-central-department .section-department-content .department-content .title {
+  color: #006766;
+}
+
+.section-central-department .section-department-content .department-content .boss {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.section-central-department .section-department-content .department-content .boss .image {
+  border-right: 1px solid #CECECE;
+}
+
+.section-central-department .section-department-content .department-content .boss .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+}
+
+.section-central-department .section-department-content .department-content .boss .infos .info {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-central-department .section-department-content .department-content .boss .infos .info span {
+  font-weight: bold;
+}
+
+.section-central-department .section-department-content .department-content .txt {
+  color: #444444;
+  font-size: 30px;
+}
+
+.section-central-department .section-department-content .department-content .txt .btn {
+  color: white;
+  background: #006766;
+  padding: 18px 110px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.section-central-department .section-department-content .department-content .txt .btn:hover {
+  background: #008B8A;
+}
+
+.section-department {
+  padding-top: 110px;
+}
+
+.section-department .section-departments {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-department .section-departments h2 {
+  color: #006766;
+}
+
+.section-department .section-departments .descr {
+  font-size: 30px;
+  color: #444444;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section-department .section-departments .content .departments {
+  border: 0;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-department .section-departments .content .departments .nav-link {
+  padding: 20px;
+  border: 0;
+  -webkit-transition: all .7s ease 0s;
+  transition: all .7s ease 0s;
+}
+
+.section-department .section-departments .content .departments .nav-link .box {
+  height: 300px;
+  position: relative;
+  color: #006766;
+  border: 1px solid #006766;
+  width: 100%;
+}
+
+.section-department .section-departments .content .departments .nav-link .box .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #006766;
+  text-align: center;
+  height: 140px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.section-department .section-departments .content .departments .nav-link:hover {
+  padding: 10px 20px 30px;
+  -webkit-transition: all .7s ease 0s;
+  transition: all .7s ease 0s;
+}
+
+.section-department .section-departments .content .departments .nav-link:hover .box {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+}
+
+.section-department .section-departments .content .departments .active {
+  padding: 10px 20px 30px !important;
+}
+
+.section-department .section-departments .content .departments .active .box {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+}
+
+.section-department .section-department-content {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-department .section-department-content .department-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-department .section-department-content .department-content .title {
+  color: #006766;
+}
+
+.section-department .section-department-content .department-content .boss {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.section-department .section-department-content .department-content .boss .image {
+  border-right: 1px solid #CECECE;
+}
+
+.section-department .section-department-content .department-content .boss .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+}
+
+.section-department .section-department-content .department-content .boss .infos .info {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-department .section-department-content .department-content .boss .infos .info span {
+  font-weight: bold;
+}
+
+.section-department .section-department-content .department-content .txt {
+  color: #444444;
+  font-size: 30px;
+}
+
+.section-department .section-department-content .department-content .txt .history {
+  color: #006766;
+  font-size: 40px;
+}
+
+.section-department .section-department-content .department-content .txt .btn {
+  color: white;
+  background: #006766;
+  padding: 18px 110px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.section-department .section-department-content .department-content .txt .btn:hover {
+  background: #008B8A;
+}
+
+.section-management {
+  padding-top: 110px;
+}
+
+.section-management .section-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #444444;
+}
+
+.section-management .section-content h2 {
+  color: #006766;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #CECECE;
+}
+
+.section-management .section-content .manager {
+  padding-top: 50px;
+  margin-bottom: 150px;
+}
+
+.section-management .section-content .manager .position {
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+
+.section-management .section-content .manager .name {
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 35px;
+}
+
+.section-management .section-content .manager .infos {
+  margin-bottom: 25px;
+}
+
+.section-management .section-content .manager .infos .info {
+  font-size: 35px;
+}
+
+.section-management .section-content .manager .infos .info span {
+  font-weight: bold;
+}
+
+.section-management .section-content .manager .img {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-management .section-content .manager .sub-title {
+  text-align: center;
+  color: #006766;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-management .section-content .manager .activities {
+  font-size: 30px;
+}
+
+.section-management .section-content .btn {
+  color: white;
+  background: #006766;
+  padding: 18px 110px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.section-management .section-content .btn:hover {
+  background: #008B8A;
+}
+
+.section-external-department {
+  padding-top: 110px;
+}
+
+.section-external-department .section-departments {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-external-department .section-departments h2 {
+  color: #006766;
+  margin-bottom: 40px;
+}
+
+.section-external-department .section-departments .staff {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+}
+
+.section-external-department .section-departments .staff .image {
+  border-right: 1px solid #CECECE;
+}
+
+.section-external-department .section-departments .staff .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 70px;
+}
+
+.section-external-department .section-departments .staff .infos .info {
+  font-size: 30px;
+  color: #444444;
+}
+
+.section-external-department .section-departments .staff .infos .info span {
+  font-weight: bold;
+}
+
+.section-external-department .section-departments .btn {
+  color: white;
+  background: #006766;
+  padding: 18px 110px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.section-external-department .section-departments .btn:hover {
+  background: #008B8A;
 }
 /*# sourceMappingURL=base.css.map */

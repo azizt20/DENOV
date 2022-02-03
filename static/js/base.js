@@ -29,4 +29,10 @@ window.onscroll = function () {
         ;
     }
     document.querySelector(".collapse").classList.remove('show');
+};
+
+
+function myFunction() {
+    console.log("asdasdasd")
+    ;
 }

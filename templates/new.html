@@ -4,14 +4,14 @@
 
 
 
-    <section class="section-adz">
+    <section class="section-new">
         <section class="section-content">
             <div class="container-xl">
                 <div class="text-center">
                     <img src="{% static 'img/addd.png' %}" class="img-fluid img" alt="">
                 </div>
 
-                <a href="{% url 'ads_category' c.ad_id %}" style="font-size: 20px; color: #444444" class="text-left">{{ c.ad }}</a>
+                <a href="{% url 'news_category' c.new_id %}" style="font-size: 20px; color: #444444" class="text-left">{{ c.new }}</a>
                 <h2 class="title text-left">
                     {{ c.title }}
                 </h2>
@@ -22,17 +22,17 @@
 
 
                 <div class="text-center py-5 my-4">
-                    <a href="{% url 'ads' %}" class="btn">К объявлениям</a>
+                    <a href="{% url 'news' %}" class="btn">К новости</a>
                 </div>
 
 
-                <div class="row row-cols-1 row-cols-lg-3 ads">
-                    {% for ad in category.ad_set.all|slice:":3" %}
-                        <div class="col ad">
-                            <img src="{{ ad.image.url }}" class="img-fluid w-100" alt="">
-                            <div class="title">{{ ad.title }}</div>
-                            <div class="descrip">{{ ad.description }}</div>
-                            <a href="{% url 'ad' ad.pk %}" class="link">Подробнее об объявлении ></a>
+                <div class="row row-cols-1 row-cols-lg-3 news">
+                    {% for new in category.new_set.all|slice:":3" %}
+                        <div class="col new">
+                            <img src="{{ new.image.url }}" class="img-fluid w-100" alt="">
+                            <div class="title">{{ new.title }}</div>
+                            <div class="descrip">{{ new.description }}</div>
+                            <a href="{% url 'new' new.pk %}" class="link">Подробнее о новости ></a>
                         </div>
                     {% endfor %}
                 </div>

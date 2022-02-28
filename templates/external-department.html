@@ -8,8 +8,6 @@
                 <h2 class="text-center title">SIRTQI BO’LIM</h2>
 
                 {% for c in content %}
-
-
                     <div class="row staff">
                         <div class="col-4">
                             <div class="image ">
@@ -17,7 +15,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 infos">
-                            <div class="info"><span>"{{ c.position }}" :</span> {{ c.full_name }}</div>
+                            <div class="info"><span>{{ c.position }} :</span> {{ c.full_name }}</div>
                             <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
                             <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
                             <div class="info"><span>E-mail:</span> {{ c.email }}</div>
@@ -26,8 +24,8 @@
                     </div>
                 {% endfor %}
 
-                                <div class="text-center mt-5">
-                                    <a href="#top" class="btn">Наверх</a>
+                                <div class="text-center pt-5 border-top">
+                                    <a href="{% url 'home' %}" class="btn">На главную</a>
                                 </div>
             </div>
         </section>

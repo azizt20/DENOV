@@ -29,6 +29,14 @@ class Quotas(models.Model):
         return self.title
 
 
+class Finans(models.Model):
+    title = models.CharField(max_length=255)
+    table = RichTextUploadingField()
+
+    def __str__(self):
+        return self.title
+
+
 class Programs(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to = 'pages/')
@@ -39,14 +47,8 @@ class Programs(models.Model):
     def __str__(self):
         return self.title
 
-class Ads(models.Model):
-    title = models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.title
-
-class Category(models.Model):
-    category = models.ForeignKey(Ads, on_delete=models.CASCADE)
+class AdsCategory(models.Model):
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
 
@@ -55,7 +57,26 @@ class Category(models.Model):
 
 
 class Ad(models.Model):
-    ad = models.ForeignKey(Category, on_delete=models.CASCADE)
+    ad = models.ForeignKey(AdsCategory, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to = 'pages/', null=True, blank=True)
+    title = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    content = RichTextUploadingField()
+
+    def __str__(self):
+        return self.title
+
+
+class NewsCategory(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+
+class New(models.Model):
+    new = models.ForeignKey(NewsCategory, on_delete=models.CASCADE)
     image = models.ImageField(upload_to = 'pages/', null=True, blank=True)
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
@@ -74,6 +95,15 @@ class CentralDepartments(models.Model):
     email = models.CharField(max_length=255)
     web = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
+    content = RichTextUploadingField()
+
+    def __str__(self):
+        return self.name
+
+
+class InternationalRelationships(models.Model):
+    icon = models.ImageField(upload_to='pages/')
+    name = models.CharField(max_length=255)
     content = RichTextUploadingField()
 
     def __str__(self):
@@ -118,3 +148,14 @@ class ExternalDepartment(models.Model):
 
     def __str__(self):
         return self.full_name
+
+class SpirtualEducation(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to = 'pages/')
+    content = RichTextUploadingField()
+
+    def __str__(self):
+        return self.title
+
+
+

@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} НОВОСТИ {% endblock %}
+{% block content %}
+
+
+    <section class="section-news-categoty">
+        <section class="section-content">
+            <div class="container-xl">
+                <h2 class="title text-center">НОВОСТИ</h2>
+                <div class="descr text-center">
+                    Самые последние новости нашего университета
+                </div>
+
+                <div class="category">
+                    <div class="cat-name">
+                        {{ category.name }}
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 news">
+                        {% for new in category.new_set.all %}
+
+                            <div class="col new mb-5">
+                                <img src="{{ new.image.url }}" class="img-fluid w-100" alt="">
+                                <div class="title">{{ new.title }}</div>
+                                <div class="descrip">{{ new.description }}</div>
+                                <a href="{% url 'new' new.pk %}" class="link">Подробнее о новости ></a>
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+                <div class="text-center  py-5">
+                    <a href="{% url 'news' %}" class="btn">К объявлениям</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+{% endblock %}

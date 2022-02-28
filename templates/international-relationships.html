@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} Markaz Bo'limlari {% endblock %}
+{% block content %}
+
+    <section class="section-international-relationships" id="top">
+        <section class="section-sections" >
+            <div class="container-xl">
+                <h2 class="text-center title">XALQARO ALOQALAR</h2>
+                <div class="descr">
+                    <img src="{% static 'img/inter.png' %}" class="img-fluid w-100" alt="">
+                </div>
+
+                <div class="content">
+
+                    <nav>
+                        <div class="nav nav-tabs sections " id="nav-tab" role="tablist">
+                            {% for c in content %}
+
+                                <a class="nav-link " onclick="document.querySelector('.section-sections-content').classList.remove('d-none');setTimeout(() => {document.getElementById('nav-tabContent').scrollIntoView();}, 100); "
+                                   id="nav-{{ c.id }}-tab" data-toggle="tab" href="#nav-{{ c.id }}" role="tab"
+                                   aria-controls="nav-{{ c.id }}" aria-selected="true">
+
+                                    <div class="box d-flex align-items-center">
+                                        <img src="{{ c.icon.url }}" class="img-fluid pr-5" alt="">
+                                        <div class="title ">
+                                            {{ c.name }}
+                                        </div>
+                                    </div>
+
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="section-sections-content d-none">
+            <div class="container-xl">
+                <div class="tab-content sections-content" id="nav-tabContent">
+                    {% for c in content %}
+
+                        <div class="tab-pane fade " id="nav-{{ c.id }}" role="tabpanel"
+                             aria-labelledby="nav-{{ c.id }}-tab">
+                            <h2 class="title text-right">
+                                {{ c.name }}
+                            </h2>
+
+
+
+                            <div class="txt">
+                                {{ c.content |safe }}
+
+                                <div class="text-center mt-5">
+                                    <a href="#top" class="btn">Наверх</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+{% endblock %}

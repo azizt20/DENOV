@@ -2,8 +2,10 @@ from django.shortcuts import render
 from .models import *
 
 
-def index(request):
-    return render(request, 'index.html')
+def home(request):
+    facultets = Facultets.objects.all()
+    news = New.objects.all()
+    return render(request, 'index.html', {'facultets': facultets, 'news': news})
 
 
 def enrollee(request):
@@ -68,9 +70,44 @@ def central_department(request):
     return render(request, 'central-department.html', {'content': content})
 
 
+def facultets(request):
+    content = Facultets.objects.all()
+    return render(request, 'facultets.html', {'content': content})
+
+
+def science(request):
+    content = Science.objects.all()
+    return render(request, 'science.html', {'content': content})
+
+
+def magistr(request):
+    content = Magistr.objects.all()
+    return render(request, 'magistr.html', {'content': content})
+
+
+def fotos(request):
+    content = FotoCategory.objects.all()
+    return render(request, 'foto.html', {'content': content})
+
+
+def foto(request, pk):
+    content = FotoCategory.objects.get(id=pk)
+    return render(request, 'foto.html', {'content': content})
+
+
 def international_relationships(request):
     content = InternationalRelationships.objects.all()
     return render(request, 'international-relationships.html', {'content': content})
+
+
+def regulations(request):
+    content = Regulations.objects.all()
+    return render(request, 'regulations.html', {'content': content})
+
+
+def decree(request):
+    content = Decree.objects.all()
+    return render(request, 'decree.html', {'content': content})
 
 
 def department(request):
@@ -86,4 +123,3 @@ def management(request):
 def external_department(request):
     content = ExternalDepartment.objects.all()
     return render(request, 'external-department.html', {'content': content})
-

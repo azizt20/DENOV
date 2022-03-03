@@ -15,14 +15,17 @@
                 <div class="wrapper d-flex align-items-center justify-content-end justify-content-lg-between  ">
                     <div class="d-none d-lg-flex" id="triangle-bottomleft"></div>
                     <div class="links d-lg-flex justify-content-between d-none w-100">
-                        <a class="link"> Документы </a>
-                        <a class="link"> Законы </a>
-                        <a class="link"> Указы </a>
-                        <a class="link"> Программы </a>
+                        <a href="{%  url 'regulations' %}" class="link"> Документы </a>
+                        <a href="" class="link"> Законы </a>
+                        <a href="{%  url 'decree' %}" class="link"> Указы </a>
+                        <a href="{% url 'programs' %}" class="link"> Программы </a>
                         <a class="link"> Связи </a>
                         <button type="button" class="btn text-white search" style="white-space: nowrap"
-                                data-toggle="modal"
-                                data-target="#exampleModal">
+                                {#                                data-toggle="modal"#}
+                                {#                                data-target="#exampleModal"#}
+                        >
+
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -78,8 +81,8 @@
                                     </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="#">События</a>
-                            <a class="dropdown-item" href="#">Объявления</a>
+                            <a class="dropdown-item" href="{% url 'news' %}">События</a>
+                            <a class="dropdown-item" href="{% url 'ads' %}">Объявления</a>
                         </div>
                     </div>
 
@@ -94,12 +97,11 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <a class="dropdown-item" href="#">История института</a>
                             <a class="dropdown-item" href="#">Положения института</a>
-                            <a class="dropdown-item" href="#">Руководство</a>
-                            <a class="dropdown-item" href="#">Основные отделы</a>
-                            <a class="dropdown-item" href="#">Факультеты</a>
-                            <a class="dropdown-item" href="#">Кафедры</a>
-                            <a class="dropdown-item" href="#">Фотогалерея</a>
-                            <a class="dropdown-item" href="#">Видеогалерея</a>
+                            <a class="dropdown-item" href="{% url 'management' %}">Руководство</a>
+                            <a class="dropdown-item" href="{% url 'central_department' %}">Основные отделы</a>
+                            <a class="dropdown-item" href="{% url 'facultets' %}">Факультеты</a>
+                            <a class="dropdown-item" href="{% url 'department' %}">Кафедры</a>
+                            <a class="dropdown-item" href="{% url 'fotos' %}">Фотогалерея</a>
                         </div>
                     </div>
 
@@ -114,12 +116,15 @@
                                     </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Научная деятельность</a>
-                            <a class="dropdown-item" href="#">Основные отделы</a>
-                            <a class="dropdown-item" href="#">Международные связи</a>
-                            <a class="dropdown-item" href="#">Духовно-просветительская <br> деятельность</a>
-                            <a class="dropdown-item" href="#">Финансовая деятельность</a>
-                            <a class="dropdown-item" href="#">Коммерциализация научных и <br> инновационных
+                            <a class="dropdown-item" href="{% url 'science' %}">Научная деятельность</a>
+                            <a class="dropdown-item" href="{% url 'central_department' %}">Основные отделы</a>
+                            <a class="dropdown-item" href="{% url 'international_relationships' %}">Международные
+                                связи</a>
+                            <a class="dropdown-item" href="{% url 'spirtual_education' %}">Духовно-просветительская <br>
+                                деятельность</a>
+                            <a class="dropdown-item" href="{% url 'finans' %}">Финансовая деятельность</a>
+                            <a class="dropdown-item" href="{% url 'science' %}">Коммерциализация научных и <br>
+                                инновационных
                                 разработок</a>
                         </div>
                     </div>
@@ -136,7 +141,7 @@
                         <div class="dropdown-menu last" aria-labelledby="navbarDropdown4">
                             <a class="dropdown-item" href="#">Одаренные студенты</a>
                             <a class="dropdown-item" href="#">Степень бакалавра</a>
-                            <a class="dropdown-item" href="#">Степень магистра</a>
+                            <a class="dropdown-item" href="{% url 'magistr' %}">Степень магистра</a>
                             <a class="dropdown-item" href="#">Иностранные студенты</a>
                         </div>
                     </div>

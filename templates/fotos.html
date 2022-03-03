@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %}  {% endblock %}
+{% block content %}
+
+    <section class="section-fotos" id="top">
+        <section class="section-sections">
+            <div class="container-xl">
+                <h2 class="text-center title">УСТАВ ИНСТИТУТА</h2>
+                <div class="descr">
+                    Ознакомьтесь с уставными документами нашего института
+                </div>
+
+                <div class="content">
+
+                    <nav>
+                        <div class="nav nav-tabs sections row row-cols-3  " id="nav-tab" role="tablist">
+                            {% for c in content %}
+
+                                <a class="nav-link " target="_blank" href="{{ c.file.url }}">
+
+                                    <div class="box d-flex flex-column align-items-center">
+                                        <img src="{{ c.icon.url }}" class="img-fluid" alt="">
+                                        <div class="title ">
+                                            {{ c.title }}
+                                        </div>
+                                    </div>
+
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </nav>
+
+                    <div class="text-center">
+                        <a href="{% url 'home' %}" class="btn">На главную</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+{% endblock %}

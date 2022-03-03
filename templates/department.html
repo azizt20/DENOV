@@ -3,7 +3,7 @@
 {% block content %}
 
     <section class="section-department" id="top">
-        <section class="section-departments" >
+        <section class="section-departments">
             <div class="container-xl">
                 <h2 class="text-center title">КАФЕДРЫ ДТПИ</h2>
                 <div class="descr">
@@ -16,7 +16,8 @@
                         <div class="nav nav-tabs row row-cols-2 row-cols-lg-4 departments " id="nav-tab" role="tablist">
                             {% for c in content %}
 
-                                <a class="nav-link " onclick="document.querySelector('.section-department-content').classList.remove('d-none');setTimeout(() => {document.getElementById('nav-tabContent').scrollIntoView();}, 100); "
+                                <a class="nav-link "
+                                   onclick="document.querySelector('.section-department-content').classList.remove('d-none');setTimeout(() => {document.getElementById('nav-tabContent').scrollIntoView();}, 100); "
                                    id="nav-{{ c.id }}-tab" data-toggle="tab" href="#nav-{{ c.id }}" role="tab"
                                    aria-controls="nav-{{ c.id }}" aria-selected="true">
 
@@ -68,6 +69,46 @@
                                 <h3 class="text-center history mb-5">Kafedra tarixi</h3>
 
                                 {{ c.content |safe }}
+
+                                {% if c.more %}
+                                    <div class="questions my-5">
+                                        <div class="question">
+                                            <a class="w-100 click" data-toggle="collapse"
+                                               href="#collapse{{ c.id }}" role="button"
+                                               aria-expanded="false" aria-controls="collapseExample">
+                                                <div class="row">
+                                                    <div class="col-10 text-left qq">
+                                                        Больше информации о факультете
+                                                    </div>
+                                                    <div class="col-2 text-right">
+                                                        <img src="{% static 'img/arrow-fa.png' %}"
+                                                             class="img-fluid arrow-up"
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <div class="collapse" id="collapse{{ c.id }}">
+                                                <div class=" res">
+                                                    <div class="txt">
+                                                        {{ c.more | safe }}
+                                                    </div>
+                                                    <div class="closee" data-toggle="collapse"
+                                                         href="#collapse{{ c.id }}"
+                                                         role="button"
+                                                         aria-expanded="false" aria-controls="collapseExample">
+                                                        Свернуть <img src="{% static 'img/arrow-upp.png' %}"
+                                                                      class="img-fluid pl-3"
+                                                                      alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+
 
                                 <div class="text-center mt-5">
                                     <a href="#top" class="btn">Наверх</a>

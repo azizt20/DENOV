@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %}
+{% load filterr %}
+{% load static %} {% block content %}
     <section class="home">
 
         <section class="head_section" style="background-image: url({% static 'img/Parallax.png' %})">
@@ -21,85 +23,44 @@
                 <p>Последние новости связанные с нашим институтом</p>
                 <div class="news text-left">
                     <div class="row">
-                        <div class="col-12 col-md-8 col-xl-6 big">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box position-relative"
-                                     style="background-image: url({% static 'img/NewsL.png' %})">
-                                    <div class="position-absolute content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Новость заключается в том, что там да там да там да там да
-                                            там да там да там
+
+                        {% for new in news|fortwo %}
+                            <div class="col-12 col-md-8 col-xl-6 big " id="bignews{{ forloop.counter }}">
+                                <a href="{% url 'new' new.id %}" class="text-decoration-none w-100 h-100">
+                                    <div class="box position-relative"
+                                         style="background-image: url({{ new.image.url }})">
+                                        <div class="position-absolute content">
+                                            <div class="title1">{{ new.title }} </div>
+                                            <div class="title2">
+                                                {{ new.description }}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        {% endfor %}
 
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mini">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box">
-                                    <div class="img" style="background-image: url({% static 'img/news.png' %})"></div>
-                                    <div class="content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Короткий текст</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
 
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mini">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box">
-                                    <div class="img" style="background-image: url({% static 'img/news.png' %})"></div>
-                                    <div class="content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Короткий текст</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mini">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box">
-                                    <div class="img" style="background-image: url({% static 'img/news.png' %})"></div>
-                                    <div class="content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Короткий текст</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mini">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box">
-                                    <div class="img" style="background-image: url({% static 'img/news.png' %})"></div>
-                                    <div class="content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Короткий текст</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-xl-6 d-none d-xl-block big">
-                            <a href="" class="text-decoration-none w-100 h-100">
-                                <div class="box position-relative"
-                                     style="background-image: url({% static 'img/NewsL.png' %})">
-                                    <div class="position-absolute content">
-                                        <div class="title1">КАТЕГОРИЯ</div>
-                                        <div class="title2">Новость заключается в том, что там да там да там да там да
-                                            там да там да там
+                        {% for new in news|forfour %}
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mini">
+                                <a href="{% url 'new' new.id %}" class="text-decoration-none w-100 h-100">
+                                    <div class="box">
+                                        <div class="img"
+                                             style="background-image: url({{ new.image.url }})"></div>
+                                        <div class="content">
+                                            <div class="title1">{{ new.title }}</div>
+                                            <div class="title2">{{ new.description }}</div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+
+
                     </div>
 
-                    <div class="text-center">
-                        <div class="btn">Больше новостей</div>
+                    <div  class="text-center">
+                        <a href="{% url 'news' %}" class="btn">Больше новостей</a>
                     </div>
                 </div>
             </section>
@@ -132,79 +93,97 @@
                         </div>
                     </div>
 
-                    <div class="boxs row row-cols-2 row-cols-md-3 row-cols-lg-4">
-                        <div class="col">
+                    <div class="boxs row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                        <a href="{% url 'facultets' %}" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
+                                <img src="{% static 'img/fak.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
                                     ФАКУЛЬТЕТЫ
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                        <a href="{% url 'central_department' %}" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
+                                <img src="{% static 'img/sec.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
                                     ОТДЕЛЕНИЯ
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                        <a href="{% url 'department' %}" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
+                                <img src="{% static 'img/caf.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
                                     КАФЕДРЫ
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                        <a href="" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
+                                <img src="{% static 'img/stud.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
                                     СТУДЕНТЫ
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                        <a href="{% url 'enrollee' %}" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
-                                <div class="title pb-5">
-                                    ФАКУЛЬТЕТЫ
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="box d-flex flex-column justify-content-between align-items-center">
-                                <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
-                                <div class="title pb-4">
-                                    ДОКУМЕНТЫ <br>ИНСТИТУТА
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="box d-flex flex-column justify-content-between align-items-center">
-                                <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
+                                <img src="{% static 'img/abit.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
                                     АБИТУРИЕНТЫ
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                        <a href="" class="col">
                             <div class="box d-flex flex-column justify-content-between align-items-center">
                                 <div></div>
-                                <img src="{% static 'img/book.png' %}" class="img-fluid pt-2" alt="">
-                                <div class="title pb-5">
-                                    КАТЕГОРИЯ
+                                <img src="{% static 'img/doc.png' %}" class="img-fluid pt-2" alt="">
+                                <div class="title pb-4">
+                                    ДОКУМЕНТЫ <br>ИНСТИТУТА
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="" class="col">
+                            <div class="box d-flex flex-column justify-content-between align-items-center">
+                                <div></div>
+                                <img src="{% static 'img/ellib.png' %}" class="img-fluid pt-2" alt="">
+                                <div class="title pb-5">
+                                    ЭЛЕКТРОННАЯ<br>БИБЛИОТЕКА
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col">
+                            <div class="box d-flex flex-column justify-content-between align-items-center">
+                                <div></div>
+                                <img src="{% static 'img/hemis.png' %}" class="img-fluid pt-2" alt="">
+                                <div class="title pb-5">
+                                    HEMIS<br>STUDENT
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col">
+                            <div class="box d-flex flex-column justify-content-between align-items-center">
+                                <div></div>
+                                <img src="{% static 'img/hem.png' %}" class="img-fluid pt-2" alt="">
+                                <div class="title pb-5">
+                                    HEMIS
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{% url 'ads' %}" class="col">
+                            <div class="box d-flex flex-column justify-content-between align-items-center">
+                                <div></div>
+                                <img src="{% static 'img/hem.png' %}" class="img-fluid pt-2" alt="">
+                                <div class="title pb-5">
+                                    ОБЪЯВЛЕНИЯ
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -219,49 +198,23 @@
                     </p>
 
                     <div class="row row-cols-1 row-cols-lg-3 list">
-                        <div class="col">
-                            <div class="box text-center w-100 h-100">
-                                <img src="{% static 'img/news.png' %}" class="img-fluid w-100" alt="">
-                                <div class="content">
-                                    <div class="title mb-3">
-                                        IJTIMOIY - IQTISODIY FAKULTETI
+                        {% for facultet in facultets %}
+                            <div class="col">
+                                <a href="{% url 'facultets' %}?id={{ facultet.id }}" class="text-decoration-none box text-center w-100 h-100">
+                                    <img src="{{ facultet.icon.url }}" class="img-fluid w-100" alt="">
+                                    <div class="content">
+                                        <div class="title ">
+                                            {{ facultet.name }}
+                                        </div>
                                     </div>
-                                    <div class="text">
-                                        Небольшое описание факультета
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="box text-center w-100 h-100">
-                                <img src="{% static 'img/news.png' %}" class="img-fluid w-100" alt="">
-                                <div class="content">
-                                    <div class="title mb-3">
-                                        TADBIRKORLIK va BOSHQARUV FAKULTETI
-                                    </div>
-                                    <div class="text">
+                        {% endfor %}
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="box text-center w-100 h-100">
-                                <img src="{% static 'img/news.png' %}" class="img-fluid w-100" alt="">
-                                <div class="content">
-                                    <div class="title mb-3">
-                                        PEDAGOGIKA va ANIQ FANLAR FAKULTETI
-                                    </div>
-                                    <div class="text">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="text-center">
-                        <div class="btn">Больше факультетов</div>
+                        <a href="{% url 'facultets' %}" class="btn">Больше факультетов</a>
                     </div>
                 </div>
             </section>
@@ -342,4 +295,13 @@
 
     </section>
 
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function () {
+            $('#bignews2').addClass('order-last')
+        });
+    </script>
 {% endblock %}

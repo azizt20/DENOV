@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %}  {% endblock %}
+{% block content %}
+    {% for c in content %}
+        <section class="section-science">
+            <section class="section-content">
+                <div class="container-xl">
+                    <h2 class="title text-center">
+                        {{ c.title }}
+                    </h2>
+
+                    <img src="{{ c.image.url }}" class="img-fluid w-100" alt="">
+
+                    <h3 class="title2 text-center pt-5 mt-5 " style="color: black;">{{ c.title2 }}</h3>
+
+                    <div class="content ">
+                        {{ c.content | safe }}
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="#top" class="btn">Наверх</a>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+
+    {% endfor %}
+{% endblock %}

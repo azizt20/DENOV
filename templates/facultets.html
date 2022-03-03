@@ -1,0 +1,163 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} Markaz Bo'limlari {% endblock %}
+{% block content %}
+
+    <section class="section-facultet-page" id="top">
+        <section class="section-facultet">
+            <div class="container-xl">
+                <h2 class="text-center title">ФАКУЛЬТЕТЫ</h2>
+                <div class="descr">
+                    Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
+                    tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi.
+                </div>
+
+                <div class="content">
+
+                    <nav>
+                        <div class="nav nav-tabs row row-cols-2 row-cols-lg-3 facultet " id="nav-tab" role="tablist">
+                            {% for c in content %}
+
+                                <a class="nav-link "
+                                   onclick="document.querySelector('.section-facultet-content').classList.remove('d-none');setTimeout(() => {document.getElementById('nav-tabContent').scrollIntoView();}, 100); "
+                                   id="nav-{{ c.id }}-tab" data-toggle="tab" href="#nav-{{ c.id }}" role="tab"
+                                   aria-controls="nav-{{ c.id }}" aria-selected="true">
+
+                                    <div class="box d-flex flex-column justify-content-between align-items-center">
+                                        <img src="{{ c.icon.url }}" class="img-fluid " alt="">
+                                        <div class="title ">
+                                            {{ c.name }}
+                                        </div>
+                                    </div>
+
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </nav>
+
+                    <div class="text-center">
+                        <a href="{% url 'home' %}" class="btn">На главную</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-facultet-content d-none">
+            <div class="container-xl">
+                <div class="tab-content facultet-content" id="nav-tabContent">
+                    {% for c in content %}
+
+                        <div class="tab-pane fade " id="nav-{{ c.id }}" role="tabpanel"
+                             aria-labelledby="nav-{{ c.id }}-tab">
+                            <h2 class="title text-center">
+                                {{ c.name }}
+                            </h2>
+
+                            <div class="row boss">
+                                <div class="col-4">
+                                    <div class="image ">
+                                        <img src="{{ c.image.url }}" class="img-fluid w-75" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 infos">
+                                    <div class="info"><span>DEKAN:</span> {{ c.boss }}</div>
+                                    <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
+                                    <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
+                                    <div class="info"><span>E-mail:</span> {{ c.email }}</div>
+                                    <div class="info"><span>Manzil:</span> {{ c.location }}</div>
+                                </div>
+                            </div>
+
+                            <div class="txt">
+                                {{ c.content |safe }}
+
+                                {% if c.more %}
+                                    <div class="questions my-5">
+                                        <div class="question">
+                                            <a class="w-100 click" data-toggle="collapse"
+                                               href="#collapse{{ c.id }}" role="button"
+                                               aria-expanded="false" aria-controls="collapseExample">
+                                                <div class="row">
+                                                    <div class="col-10 text-left qq">
+                                                        Больше информации о факультете
+                                                    </div>
+                                                    <div class="col-2 text-right">
+                                                        <img src="{% static 'img/arrow-fa.png' %}"
+                                                             class="img-fluid arrow-up"
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <div class="collapse" id="collapse{{ c.id }}">
+                                                <div class=" res">
+                                                    <div class="txt">
+                                                        {{ c.more | safe }}
+                                                    </div>
+                                                    <div class="closee" data-toggle="collapse"
+                                                         href="#collapse{{ c.id }}"
+                                                         role="button"
+                                                         aria-expanded="false" aria-controls="collapseExample">
+                                                        Свернуть <img src="{% static 'img/arrow-upp.png' %}"
+                                                                      class="img-fluid pl-3"
+                                                                      alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+
+                                {% if c.facultetadmins_set.all|length > 0 %}
+
+                                    <h2 class="my-5">Администрация факультета:</h2>
+
+                                    {% for cc in c.facultetadmins_set.all %}
+
+                                        <div class="row staff">
+                                            <div class="col-4">
+                                                <div class="image ">
+                                                    <img src="{{ cc.image.url }}" class="img-fluid w-75" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 infos">
+                                                <div class="info"><span>{{ cc.position }} :</span> {{ cc.fullname }}
+                                                </div>
+                                                <div class="info"><span>Qabul vaqti:</span> {{ cc.time }}</div>
+                                                <div class="info"><span>Telefon:</span> {{ cc.phone }}</div>
+                                                <div class="info"><span>E-mail:</span> {{ cc.email }}</div>
+                                                <div class="info"><span>Manzil:</span> {{ cc.location }}</div>
+                                            </div>
+                                        </div>
+
+                                    {% endfor %}
+                                {% endif %}
+
+
+                                <div class="text-center mt-5">
+                                    <a href="#top" class="btn">Наверх</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function () {
+            if (window.location.search) {
+                var urlParams = new URLSearchParams(window.location.search)
+                id = urlParams.get('id')
+                setTimeout(() => {$(`#nav-${id}-tab`).click()}, 1500)
+            }
+        });
+    </script>
+{% endblock %}

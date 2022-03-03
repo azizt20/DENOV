@@ -477,7 +477,7 @@ h4, .h4 {
       width: 100%;
       font-size: 23px;
       font-weight: 600;
-      height: 45px;
+      height: 55px;
       width: 100vw;
 
       a:hover {
@@ -668,6 +668,7 @@ h4, .h4 {
       .boxs {
         .col {
           padding: 25px;
+          text-decoration: none;
 
           .box {
             height: 300px;
@@ -703,9 +704,9 @@ h4, .h4 {
         }
 
         .box {
+          display: block;
           text-decoration: none !important;
-          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-          border: 1px solid black;
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) !important;
           border-radius: 5px;
 
           &:hover {
@@ -1021,6 +1022,84 @@ h4, .h4 {
 }
 
 
+//magistr----------------magistr----------------------magistr---------------magistr-------------
+
+.section-magistr {
+  padding-top: 110px;
+
+  .section-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    h2 {
+      color: #006766;
+      padding-bottom: 70px;
+    }
+
+    .title2 {
+      font-size: 40px;
+    }
+
+    .content {
+      padding-top: 70px;
+      font-size: 25px;
+    }
+
+    .btn {
+      color: white;
+      background: #006766;
+      padding: 18px 110px;
+      font-size: 23px;
+      font-weight: 700;
+      margin-top: 10px;
+
+      &:hover {
+        background: #008B8A;
+      }
+    }
+  }
+}
+
+
+//science----------------science----------------------science---------------science-------------
+
+.section-science {
+  padding-top: 110px;
+
+  .section-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    h2 {
+      color: #006766;
+      padding-bottom: 70px;
+    }
+
+    .title2 {
+      font-size: 40px;
+    }
+
+    .content {
+      padding-top: 70px;
+      font-size: 25px;
+    }
+
+    .btn {
+      color: white;
+      background: #006766;
+      padding: 18px 110px;
+      font-size: 23px;
+      font-weight: 700;
+      margin-top: 10px;
+
+      &:hover {
+        background: #008B8A;
+      }
+    }
+  }
+}
+
+
 //spirtual-education----------------spirtual-education----------------------spirtual-education---------------spirtual-education-------------
 
 .section-spirtual-education {
@@ -1050,6 +1129,10 @@ h4, .h4 {
   .section-content {
     padding-top: 70px;
     padding-bottom: 70px;
+
+    .content{
+      font-size: 25px;
+    }
 
     h2 {
       color: #006766;
@@ -1232,7 +1315,8 @@ h4, .h4 {
   .section-content {
     padding-top: 70px;
     padding-bottom: 70px;
-    .img{
+
+    .img {
       margin-bottom: 70px;
     }
 
@@ -1288,7 +1372,6 @@ h4, .h4 {
     }
   }
 }
-
 
 
 //ADS----------------ADS----------------------ADS---------------ADS-------------
@@ -1445,7 +1528,8 @@ h4, .h4 {
   .section-content {
     padding-top: 70px;
     padding-bottom: 70px;
-    .img{
+
+    .img {
       margin-bottom: 70px;
     }
 
@@ -1768,6 +1852,205 @@ h4, .h4 {
 }
 
 
+//regulations----------------regulations----------------------regulations---------------regulations-------------
+
+.section-regulations {
+  padding-top: 110px;
+
+  .section-sections {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h2 {
+      color: #006766;
+    }
+
+    .descr {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 30px;
+      border-bottom: 1px silver solid;
+
+    }
+
+    .content {
+      .sections {
+        border: 0;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        display: flex;
+
+        .nav-link {
+          padding: 20px;
+          border: 0;
+          transition: all .7s ease 0s;
+
+
+          .box {
+            padding: 50px 60px;
+            position: relative;
+            color: #006766;
+            border: 1px solid #006766;
+            width: 100%;
+
+            .title {
+              font-size: 35px;
+              color: #006766;
+              text-align: center;
+              margin-top: 50px;
+            }
+          }
+
+
+          &:hover {
+            padding: 10px 20px 30px;
+
+            .box {
+              box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+            }
+
+            transition: all .7s ease 0s;
+
+          }
+
+
+        }
+
+        .active {
+          padding: 10px 20px 30px !important;
+
+          .box {
+            box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+          }
+
+          .title {
+            font-weight: bold;
+          }
+
+        }
+      }
+
+
+    }
+
+
+    .btn {
+      color: white;
+      background: #006766;
+      padding: 18px 110px;
+      font-size: 23px;
+      font-weight: 700;
+      margin-top: 10px;
+      text-decoration: none;
+
+      &:hover {
+        background: #008B8A;
+      }
+    }
+  }
+
+}
+
+
+//decree----------------decree----------------------decree---------------decree-------------
+
+.section-decree {
+  padding-top: 110px;
+
+  .section-sections {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h2 {
+      color: #006766;
+    }
+
+    .descr {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 30px;
+      border-bottom: 1px silver solid;
+    }
+
+    .content {
+      .sections {
+        border: 0;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+
+        .nav-link {
+          padding: 20px;
+          border: 0;
+          transition: all .7s ease 0s;
+
+
+          .box {
+            padding: 40px 60px;
+            position: relative;
+            color: #006766;
+            border: 1px solid #006766;
+            width: 100%;
+
+            .title {
+              font-size: 20px;
+              color: #006766;
+              text-align: center;
+            }
+          }
+
+
+          &:hover {
+            padding: 10px 20px 30px;
+
+            .box {
+              box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+            }
+
+            transition: all .7s ease 0s;
+
+          }
+
+
+        }
+
+        .active {
+          padding: 10px 20px 30px !important;
+
+          .box {
+            box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+          }
+
+          .title {
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+
+    .btn {
+      color: white;
+      background: #006766;
+      padding: 18px 110px;
+      font-size: 23px;
+      font-weight: 700;
+      margin-top: 10px;
+      text-decoration: none;
+
+      &:hover {
+        background: #008B8A;
+      }
+    }
+
+  }
+
+}
+
+
 //DEPARTMENT----------------DEPARTMENT----------------------DEPARTMENT---------------DEPARTMENT-------------
 
 .section-department {
@@ -1898,6 +2181,76 @@ h4, .h4 {
           color: #006766;
           font-size: 40px;
         }
+
+        .questions {
+          .question {
+            background: #F9F6EF;
+            width: 100%;
+            font-weight: bold;
+            //border: 1px solid #F9F6EF;
+            border-radius: 20px;
+            margin-bottom: 40px;
+
+            a {
+              text-decoration: none;
+
+              .arrow-up {
+                transform: rotate(0deg);
+                transition: all .7s ease 0s;
+              }
+
+              &[aria-expanded="true"] {
+                .arrow-up {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+
+
+            .row {
+              padding: 25px 50px;
+
+              .qq {
+                font-size: 30px;
+                line-height: 40px;
+                color: #444444;
+              }
+
+
+            }
+
+            .res {
+              background: #ffffFF;
+              font-size: 25px;
+              border-radius: 0 0 20px 20px;
+              font-weight: normal;
+
+              p:last-child {
+                margin: 0;
+              }
+
+              .txt {
+                padding: 40px;
+              }
+
+              .closee {
+                width: 100%;
+                font-weight: bold;
+                font-size: 30px;
+                color: #444444;
+                border-radius: 0 0 20px 20px;
+                background: #F9F6EF;
+                text-align: right;
+                padding: 25px 50px;
+
+
+              }
+            }
+
+
+          }
+        }
+
 
         .btn {
           color: white;
@@ -2061,3 +2414,249 @@ h4, .h4 {
 
   }
 }
+
+
+//FACULTETS-PAGE----------------FACULTETS-PAGE----------------------FACULTETS-PAGE---------------central-DEPARTMENT-------------
+
+.section-facultet-page {
+  padding-top: 110px;
+
+  .section-facultet {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h2 {
+      color: #006766;
+    }
+
+    .descr {
+      font-size: 30px;
+      color: #444444;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .content {
+      .facultet {
+        border: 0;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+
+        .nav-link {
+          padding: 20px;
+          border: 0;
+          transition: all .7s ease 0s;
+
+
+          .box {
+            color: #006766;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.20);
+            width: 100%;
+
+            .title {
+              font-size: 20px;
+              font-weight: bold;
+              color: #006766;
+              text-align: center;
+              height: 140px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0 10px;
+            }
+          }
+
+
+          &:hover {
+            padding: 10px 20px 30px;
+
+            .box {
+              box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35);
+            }
+
+            transition: all .7s ease 0s;
+
+          }
+
+
+        }
+
+        .active {
+          padding: 10px 20px 30px !important;
+
+          .box {
+            box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.35) !important;
+          }
+
+        }
+      }
+
+
+    }
+
+  }
+
+  .section-facultet-content {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .facultet-content {
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      .title {
+        color: #006766;
+      }
+
+      .boss {
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+        .image {
+          border-right: 1px solid #CECECE;
+        }
+
+        .infos {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 50px;
+
+          .info {
+            font-size: 30px;
+            color: #444444;
+
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .txt {
+        color: #444444;
+        font-size: 30px;
+
+
+      }
+
+
+      .questions {
+        .question {
+          background: #F9F6EF;
+          width: 100%;
+          font-weight: bold;
+          //border: 1px solid #F9F6EF;
+          border-radius: 20px;
+          margin-bottom: 40px;
+
+          a {
+            text-decoration: none;
+
+            .arrow-up {
+              transform: rotate(0deg);
+              transition: all .7s ease 0s;
+            }
+
+            &[aria-expanded="true"] {
+              .arrow-up {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+
+          .row {
+            padding: 25px 50px;
+
+            .qq {
+              font-size: 30px;
+              line-height: 40px;
+              color: #444444;
+            }
+
+
+          }
+
+          .res {
+            background: #ffffFF;
+            font-size: 25px;
+            border-radius: 0 0 20px 20px;
+            font-weight: normal;
+
+            p:last-child {
+              margin: 0;
+            }
+
+            .txt {
+              padding: 40px;
+            }
+
+            .closee {
+              width: 100%;
+              font-weight: bold;
+              font-size: 30px;
+              color: #444444;
+              border-radius: 0 0 20px 20px;
+              background: #F9F6EF;
+              text-align: right;
+              padding: 25px 50px;
+
+
+            }
+          }
+
+
+        }
+      }
+
+      .staff {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        border-top: 1px solid #CECECE;
+
+
+        .image {
+          border-right: 1px solid #CECECE;
+        }
+
+        .infos {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 70px;
+
+          .info {
+            font-size: 30px;
+            color: #444444;
+
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .btn {
+    color: white;
+    background: #006766;
+    padding: 18px 110px;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: none;
+
+    &:hover {
+      background: #008B8A;
+    }
+  }
+}
+
+

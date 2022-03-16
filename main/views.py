@@ -87,7 +87,7 @@ def magistr(request):
 
 def fotos(request):
     content = FotoCategory.objects.all()
-    return render(request, 'foto.html', {'content': content})
+    return render(request, 'fotos.html', {'content': content})
 
 
 def foto(request, pk):

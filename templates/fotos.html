@@ -1,38 +1,38 @@
 {% extends 'base.html' %} {% load static %}
-{% block title %}  {% endblock %}
+{% block title %}  asdas{% endblock %}
 {% block content %}
 
     <section class="section-fotos" id="top">
-        <section class="section-sections">
+        <section class="section-content">
             <div class="container-xl">
-                <h2 class="text-center title">УСТАВ ИНСТИТУТА</h2>
+                <h2 class="text-center title">FOTOGALEREYA</h2>
                 <div class="descr">
-                    Ознакомьтесь с уставными документами нашего института
+                    <img src="{% static 'img/fotoo.png' %}" class="img-fluid w-100" alt="">
                 </div>
 
                 <div class="content">
+                    {% for c in content %}
+                        <div class="categoty">
+                            <div class="title">
+                                {{ c.title }}
+                            </div>
 
-                    <nav>
-                        <div class="nav nav-tabs sections row row-cols-3  " id="nav-tab" role="tablist">
-                            {% for c in content %}
-
-                                <a class="nav-link " target="_blank" href="{{ c.file.url }}">
-
-                                    <div class="box d-flex flex-column align-items-center">
-                                        <img src="{{ c.icon.url }}" class="img-fluid" alt="">
-                                        <div class="title ">
-                                            {{ c.title }}
-                                        </div>
+                            <div class="row row-cols-3">
+                                {% for cc in c.foto_set.all %}
+                                    <div class="col">
+                                        <a href="{{ cc.image.url }}">
+                                            <img src="{{ cc.image.url }}" class="img-fluid" alt="">
+                                        </a>
                                     </div>
+                                {% endfor %}
 
-                                </a>
-                            {% endfor %}
+
+                            </div>
+                            <div class="text-center">
+                                <a href="{% url 'foto' c.id %}" class="btn my-5">Больше фотографий</a>
+                            </div>
                         </div>
-                    </nav>
-
-                    <div class="text-center">
-                        <a href="{% url 'home' %}" class="btn">На главную</a>
-                    </div>
+                    {% endfor %}
 
 
                 </div>

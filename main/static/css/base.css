@@ -54,6 +54,21 @@ h4, .h4 {
   padding: 10px 8px;
 }
 
+#tg {
+  border-radius: 8px 0px 0px 8px;
+  background: #006766;
+  position: fixed;
+  right: 0;
+  bottom: 170px;
+  z-index: 11;
+  padding: 10px 8px;
+}
+
+#tg svg {
+  width: 22px;
+  color: #FFFFFF;
+}
+
 .header {
   z-index: 12;
   position: fixed;

@@ -12,9 +12,9 @@ class Enrollee(models.Model):
         verbose_name = 'данные об абитуриентах'
         verbose_name_plural = 'Абитуриенты'
 
-
     def __str__(self):
         return self.title
+
 
 class Questions(models.Model):
     questions = models.ForeignKey(Enrollee, on_delete=models.CASCADE, verbose_name="абитуриет")
@@ -46,7 +46,7 @@ class Finans(models.Model):
 
 class Programs(models.Model):
     title = models.CharField(max_length=255, verbose_name="Заголовок")
-    image = models.ImageField(upload_to = 'pages/')
+    image = models.ImageField(upload_to='pages/')
     content = RichTextUploadingField(verbose_name="Текст")
     scheme = RichTextUploadingField(verbose_name="Схемы")
     table = RichTextUploadingField(verbose_name="Таблица")
@@ -70,7 +70,7 @@ class AdsCategory(models.Model):
 
 class Ad(models.Model):
     ad = models.ForeignKey(AdsCategory, on_delete=models.CASCADE, verbose_name="Категория объявлений")
-    image = models.ImageField(upload_to = 'pages/', null=True, blank=True, verbose_name="Излбражение")
+    image = models.ImageField(upload_to='pages/', null=True, blank=True, verbose_name="Излбражение")
     title = models.CharField(max_length=255, verbose_name="Заголовок")
     description = models.CharField(max_length=255, verbose_name="Описание")
     content = RichTextUploadingField(verbose_name="Текст")
@@ -94,7 +94,7 @@ class NewsCategory(models.Model):
 
 class New(models.Model):
     new = models.ForeignKey(NewsCategory, on_delete=models.CASCADE, verbose_name="Категория новости")
-    image = models.ImageField(upload_to = 'pages/', null=True, blank=True, verbose_name="Излбражение")
+    image = models.ImageField(upload_to='pages/', null=True, blank=True, verbose_name="Излбражение")
     title = models.CharField(max_length=255, verbose_name="Заголовок")
     description = models.CharField(max_length=255, verbose_name="Описание")
     content = RichTextUploadingField(verbose_name="Текст")
@@ -199,7 +199,8 @@ class FotoCategory(models.Model):
 
 
 class Foto(models.Model):
-    foto = models.ForeignKey(FotoCategory, on_delete=models.CASCADE, verbose_name="Категории фото", null=True, blank=True)
+    foto = models.ForeignKey(FotoCategory, on_delete=models.CASCADE, verbose_name="Категории фото", null=True,
+                             blank=True)
     about = models.CharField(max_length=255, null=True, blank=True, verbose_name="(Описание) На фото ... ")
     image = models.ImageField(upload_to='foto/', verbose_name="Излбражение")
 
@@ -249,7 +250,6 @@ class Science(models.Model):
     title2 = models.CharField(max_length=255, null=True, blank=True, verbose_name="Заголовок 2")
     content = RichTextUploadingField(verbose_name="Текст")
 
-
     class Meta:
         verbose_name = 'данние о науке'
         verbose_name_plural = 'Наука'
@@ -261,7 +261,6 @@ class Magistr(models.Model):
     title2 = models.CharField(max_length=255, null=True, blank=True, verbose_name="Заголовок 2")
     content = RichTextUploadingField(verbose_name="Текст")
 
-
     class Meta:
         verbose_name = 'данние о магистратуре'
         verbose_name_plural = 'Магистратура'
@@ -272,7 +271,6 @@ class Decree(models.Model):
     icon = models.ImageField(upload_to='pages/', verbose_name="иконка")
     file = models.FileField(upload_to='files/', verbose_name="файл")
 
-
     class Meta:
         verbose_name = 'решениу'
         verbose_name_plural = 'Решения'
@@ -282,7 +280,6 @@ class Regulations(models.Model):
     title = models.CharField(max_length=255, verbose_name="Заголовок")
     icon = models.ImageField(upload_to='pages/', verbose_name="иконка")
     file = models.FileField(upload_to='files/', verbose_name="файл")
-
 
     class Meta:
         verbose_name = 'устав'

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -107,17 +109,26 @@ AUTH_PASSWORD_VALIDATORS = [
 
 TIME_ZONE = 'Asia/Tashkent'
 
-LANGUAGE_CODE = 'ru'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 
+LANGUAGE_CODE = 'ru'
+gettext = lambda s: s
 LANGUAGES = [
     ('ru', 'Русский'),
     ('en', 'English'),
     ('uz', 'O\'zbek'),
 ]
+MODELTRANSLATION_LANGUAGES = ('en', 'uz', 'ru')
 
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 USE_I18N = True
 
-USE_TZ = True
+USE_L10N = True
+
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

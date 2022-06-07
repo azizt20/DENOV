@@ -41,8 +41,5 @@
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
-    <enabled-global>
-      <option value="SCSS" />
-    </enabled-global>
   </component>
 </project>

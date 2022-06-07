@@ -54,7 +54,6 @@ class ManagementTranslation(TranslationOptions):
     fields = ('position', 'full_name', 'time', 'work_activities')
 
 
-
 class ExternalDepartmentTranslation(TranslationOptions):
     fields = ('position', 'full_name', 'time', 'location')
 
@@ -93,9 +92,6 @@ class DecreeTranslation(TranslationOptions):
 
 class RegulationsTranslation(TranslationOptions):
     fields = ('title',)
-
-
-
 
 
 translator.register(Enrollee, EnrolleeTranslation)

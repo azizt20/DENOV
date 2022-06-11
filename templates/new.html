@@ -22,7 +22,7 @@
 
 
                 <div class="text-center py-5 my-4">
-                    <a href="{% url 'news' %}" class="btn">К новости</a>
+                    <a href="{% url 'news' %}" class="btn">{% translate "К новости" %}</a>
                 </div>
 
 
@@ -32,7 +32,7 @@
                             <img src="{{ new.image.url }}" class="img-fluid w-100" alt="">
                             <div class="title">{{ new.title }}</div>
                             <div class="descrip">{{ new.description }}</div>
-                            <a href="{% url 'new' new.pk %}" class="link">Подробнее о новости ></a>
+                            <a href="{% url 'new' new.pk %}" class="link">{% translate "Подробнее о новости >" %}</a>
                         </div>
                     {% endfor %}
                 </div>

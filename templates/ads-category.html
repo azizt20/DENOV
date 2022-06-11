@@ -6,9 +6,9 @@
     <section class="section-ads-categoty">
         <section class="section-content">
             <div class="container-xl">
-                <h2 class="title text-center">E`LONLAR</h2>
+                <h2 class="title text-center">{% translate "E`LONLAR" %}</h2>
                 <div class="descr text-center">
-                    Самые последние объявления нашего университета
+                    {% translate "Самые последние объявления нашего университета" %}
                 </div>
 
                 <div class="category">
@@ -22,7 +22,7 @@
                                 <img src="{{ ad.image.url }}" class="img-fluid w-100" alt="">
                                 <div class="title">{{ ad.title }}</div>
                                 <div class="descrip">{{ ad.description }}</div>
-                                <a href="{% url 'ad' ad.pk %}" class="link">Подробнее об объявлении ></a>
+                                <a href="{% url 'ad' ad.pk %}" class="link">{% translate "Подробнее об объявлении >" %}</a>
                             </div>
 
                         {% endfor %}
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="text-center  py-5">
-                    <a href="{% url 'ads' %}" class="btn">К объявлениям</a>
+                    <a href="{% url 'ads' %}" class="btn">{% translate "К объявлениям" %}</a>
                 </div>
             </div>
         </section>

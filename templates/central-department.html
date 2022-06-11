@@ -5,9 +5,9 @@
     <section class="section-central-department" id="top">
         <section class="section-departments" >
             <div class="container-xl">
-                <h2 class="text-center title">Markaz Bo'limlari</h2>
+                <h2 class="text-center title">{% translate "Markaz Bo'limlari" %}</h2>
                 <div class="descr">
-                    Узнайте подробности
+                    {% translate "Узнайте подробности" %}
                 </div>
 
                 <div class="content">
@@ -55,12 +55,12 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8 infos">
-                                    <div class="info"><span>Bo‘lim boshlig‘i:</span> {{ c.boss }}</div>
-                                    <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
-                                    <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
-                                    <div class="info"><span>E-mail:</span> {{ c.email }}</div>
-                                    <div class="info"><span>Web-sayt:</span> {{ c.web }}</div>
-                                    <div class="info"><span>Manzil:</span> {{ c.location }}</div>
+                                    <div class="info"><span>{% translate "Bo‘lim boshlig‘i:" %}</span> {{ c.boss }}</div>
+                                    <div class="info"><span>{% translate "Qabul vaqti:" %}</span> {{ c.time }}</div>
+                                    <div class="info"><span>{% translate "Telefon:" %}</span> {{ c.phone }}</div>
+                                    <div class="info"><span>{% translate "E-mail:" %}</span> {{ c.email }}</div>
+                                    <div class="info"><span>{% translate "Web-sayt:" %}</span> {{ c.web }}</div>
+                                    <div class="info"><span>{% translate "Manzil:" %}</span> {{ c.location }}</div>
                                 </div>
                             </div>
 
@@ -68,7 +68,7 @@
                                 {{ c.content |safe }}
 
                                 <div class="text-center mt-5">
-                                    <a href="#top" class="btn">Наверх</a>
+                                    <a href="#top" class="btn">{% translate "Наверх" %}</a>
                                 </div>
                             </div>
                         </div>

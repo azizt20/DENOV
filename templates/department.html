@@ -5,9 +5,9 @@
     <section class="section-department" id="top">
         <section class="section-departments">
             <div class="container-xl">
-                <h2 class="text-center title">КАФЕДРЫ ДТПИ</h2>
+                <h2 class="text-center title">{% translate "КАФЕДРЫ ДТПИ" %}</h2>
                 <div class="descr">
-                    Нажмите на кафедру, чтобы узнать подробности
+                    {% translate "Нажмите на кафедру, чтобы узнать подробности" %}
                 </div>
 
                 <div class="content">
@@ -56,17 +56,17 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8 infos">
-                                    <div class="info"><span>"{{ c.name }}" kafedra mundiri :</span> {{ c.boss }}</div>
-                                    <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
-                                    <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
-                                    <div class="info"><span>E-mail:</span> {{ c.email }}</div>
-                                    <div class="info"><span>Manzil:</span> {{ c.location }}</div>
+                                    <div class="info"><span>"{{ c.name }}" {% translate "kafedra mundiri :" %}</span> {{ c.boss }}</div>
+                                    <div class="info"><span>{% translate "Qabul vaqti:" %}</span> {{ c.time }}</div>
+                                    <div class="info"><span>{% translate "Telefon:" %}</span> {{ c.phone }}</div>
+                                    <div class="info"><span>{% translate "E-mail:" %}</span> {{ c.email }}</div>
+                                    <div class="info"><span>{% translate "Manzil:" %}</span> {{ c.location }}</div>
                                 </div>
                             </div>
 
                             <div class="txt">
 
-                                <h3 class="text-center history mb-5">Kafedra tarixi</h3>
+                                <h3 class="text-center history mb-5">{% translate "Kafedra tarixi" %}</h3>
 
                                 {{ c.content |safe }}
 
@@ -78,7 +78,7 @@
                                                aria-expanded="false" aria-controls="collapseExample">
                                                 <div class="row">
                                                     <div class="col-10 text-left qq">
-                                                        Больше информации о факультете
+                                                        {% translate "Больше информации о факультете" %}
                                                     </div>
                                                     <div class="col-2 text-right">
                                                         <img src="{% static 'img/arrow-fa.png' %}"
@@ -97,7 +97,7 @@
                                                          href="#collapse{{ c.id }}"
                                                          role="button"
                                                          aria-expanded="false" aria-controls="collapseExample">
-                                                        Свернуть <img src="{% static 'img/arrow-upp.png' %}"
+                                                         {% translate "Свернуть" %} <img src="{% static 'img/arrow-upp.png' %}"
                                                                       class="img-fluid pl-3"
                                                                       alt="">
                                                     </div>
@@ -111,7 +111,7 @@
 
 
                                 <div class="text-center mt-5">
-                                    <a href="#top" class="btn">Наверх</a>
+                                    <a href="#top" class="btn">{% translate "Наверх" %}</a>
                                 </div>
                             </div>
                         </div>

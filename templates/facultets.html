@@ -5,10 +5,10 @@
     <section class="section-facultet-page" id="top">
         <section class="section-facultet">
             <div class="container-xl">
-                <h2 class="text-center title">ФАКУЛЬТЕТЫ</h2>
+                <h2 class="text-center title">{% translate "ФАКУЛЬТЕТЫ" %}</h2>
                 <div class="descr">
-                    Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
-                    tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi.
+                    {% translate "Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
+                    tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi." %}
                 </div>
 
                 <div class="content">
@@ -35,7 +35,7 @@
                     </nav>
 
                     <div class="text-center">
-                        <a href="{% url 'home' %}" class="btn">На главную</a>
+                        <a href="{% url 'home' %}" class="btn">{% translate "На главную" %}</a>
                     </div>
                 </div>
             </div>
@@ -59,11 +59,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8 infos">
-                                    <div class="info"><span>DEKAN:</span> {{ c.boss }}</div>
-                                    <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
-                                    <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
-                                    <div class="info"><span>E-mail:</span> {{ c.email }}</div>
-                                    <div class="info"><span>Manzil:</span> {{ c.location }}</div>
+                                    <div class="info"><span>{% translate "DEKAN:" %}</span> {{ c.boss }}</div>
+                                    <div class="info"><span>{% translate "Qabul vaqti:" %}</span> {{ c.time }}</div>
+                                    <div class="info"><span>{% translate "Telefon:" %}</span> {{ c.phone }}</div>
+                                    <div class="info"><span>{% translate "E-mail:" %}</span> {{ c.email }}</div>
+                                    <div class="info"><span>{% translate "Manzil:" %}</span> {{ c.location }}</div>
                                 </div>
                             </div>
 
@@ -78,7 +78,7 @@
                                                aria-expanded="false" aria-controls="collapseExample">
                                                 <div class="row">
                                                     <div class="col-10 text-left qq">
-                                                        Больше информации о факультете
+                                                        {% translate "Больше информации о факультете" %}
                                                     </div>
                                                     <div class="col-2 text-right">
                                                         <img src="{% static 'img/arrow-fa.png' %}"
@@ -97,7 +97,7 @@
                                                          href="#collapse{{ c.id }}"
                                                          role="button"
                                                          aria-expanded="false" aria-controls="collapseExample">
-                                                        Свернуть <img src="{% static 'img/arrow-upp.png' %}"
+                                                         {% translate "Свернуть" %} <img src="{% static 'img/arrow-upp.png' %}"
                                                                       class="img-fluid pl-3"
                                                                       alt="">
                                                     </div>
@@ -111,7 +111,7 @@
 
                                 {% if c.facultetadmins_set.all|length > 0 %}
 
-                                    <h2 class="my-5">Администрация факультета:</h2>
+                                    <h2 class="my-5">{% translate "Администрация факультета:" %}</h2>
 
                                     {% for cc in c.facultetadmins_set.all %}
 
@@ -124,10 +124,10 @@
                                             <div class="col-lg-8 infos">
                                                 <div class="info"><span>{{ cc.position }} :</span> {{ cc.fullname }}
                                                 </div>
-                                                <div class="info"><span>Qabul vaqti:</span> {{ cc.time }}</div>
-                                                <div class="info"><span>Telefon:</span> {{ cc.phone }}</div>
-                                                <div class="info"><span>E-mail:</span> {{ cc.email }}</div>
-                                                <div class="info"><span>Manzil:</span> {{ cc.location }}</div>
+                                                <div class="info"><span>{% translate "Qabul vaqti:" %}</span> {{ cc.time }}</div>
+                                                <div class="info"><span>{% translate "Telefon:" %}</span> {{ cc.phone }}</div>
+                                                <div class="info"><span>{% translate "E-mail:" %}</span> {{ cc.email }}</div>
+                                                <div class="info"><span>{% translate "Manzil:" %}</span> {{ cc.location }}</div>
                                             </div>
                                         </div>
 
@@ -136,7 +136,7 @@
 
 
                                 <div class="text-center mt-5">
-                                    <a href="#top" class="btn">Наверх</a>
+                                    <a href="#top" class="btn">{% translate "Наверх" %}</a>
                                 </div>
                             </div>
                         </div>

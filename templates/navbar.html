@@ -8,7 +8,7 @@
             <img src="{% static 'img/Logo.png' %}" class="mr-3 logo" width="80px" height="80px" alt="">
             <a class="navbar-brand text-white logo d-lg-none  " href="{% url 'home' %}"><h3 class="m-0">DENOV</h3></a>
             <a class="navbar-brand text-white logo d-none d-lg-block  " href="{% url 'home' %}"><h3 class="m-0">Denov
-                tadbirkorlik va <br> pedagogika instituti</h3></a>
+                {% translate "tadbirkorlik va" %} <br> {% translate "pedagogika instituti" %}</h3></a>
         </div>
 
         <div class="col-8 p-0">
@@ -18,10 +18,10 @@
                     <div class="d-none d-lg-flex" id="triangle-bottomleft"></div>
                     <div class="links d-lg-flex justify-content-between d-none w-100">
                         <a href="{%  url 'regulations' %}" class="link"> {% trans 'Документы' %} </a>
-                        <a href="" class="link"> Законы </a>
-                        <a href="{%  url 'decree' %}" class="link"> Указы </a>
-                        <a href="{% url 'programs' %}" class="link"> Программы </a>
-                        <a class="link"> Связи </a>
+                        <a href="" class="link"> {% translate "Законы" %} </a>
+                        <a href="{%  url 'decree' %}" class="link"> {% translate "Указы" %} </a>
+                        <a href="{% url 'programs' %}" class="link"> {% translate "Программы" %} </a>
+                        <a class="link"> {% translate "Связи" %} </a>
                         <button type="button" class="btn text-white search" style="white-space: nowrap"
                                 {#                                data-toggle="modal"#}
                                 {#                                data-target="#exampleModal"#}
@@ -33,7 +33,7 @@
                                 <path
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
-                            Search
+                            {% translate "Search" %}
                         </button>
                     </div>
 
@@ -77,33 +77,33 @@
                     <div class="dropdown">
                         <a class="  link " href="#" id="navbarDropdown1" role="button"
                            data-toggle="dropdown" aria-expanded="false">
-                            Новости
+                            {% translate "Новости" %}
                             <span class="pl-2 down">
                                         <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                                     </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="{% url 'news' %}">События</a>
-                            <a class="dropdown-item" href="{% url 'ads' %}">Объявления</a>
+                            <a class="dropdown-item" href="{% url 'news' %}">{% translate "События" %}</a>
+                            <a class="dropdown-item" href="{% url 'ads' %}">{% translate "Объявления" %}</a>
                         </div>
                     </div>
 
                     <div class="dropdown">
                         <a class="  link " href="#" id="navbarDropdown2" role="button"
                            data-toggle="dropdown" aria-expanded="false">
-                            Институт
+                            {% translate "Институт" %}
                             <span class="pl-2 down">
                                         <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                                     </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="#">История института</a>
-                            <a class="dropdown-item" href="#">Положения института</a>
-                            <a class="dropdown-item" href="{% url 'management' %}">Руководство</a>
-                            <a class="dropdown-item" href="{% url 'central_department' %}">Основные отделы</a>
-                            <a class="dropdown-item" href="{% url 'facultets' %}">Факультеты</a>
-                            <a class="dropdown-item" href="{% url 'department' %}">Кафедры</a>
-                            <a class="dropdown-item" href="{% url 'fotos' %}">Фотогалерея</a>
+                            <a class="dropdown-item" href="#">{% translate "История института" %}</a>
+                            <a class="dropdown-item" href="#">{% translate "Положения института" %}</a>
+                            <a class="dropdown-item" href="{% url 'management' %}">{% translate "Руководство" %}</a>
+                            <a class="dropdown-item" href="{% url 'central_department' %}">{% translate "Основные отделы" %}</a>
+                            <a class="dropdown-item" href="{% url 'facultets' %}">{% translate "Факультеты" %}</a>
+                            <a class="dropdown-item" href="{% url 'department' %}">{% translate "Кафедры" %}</a>
+                            <a class="dropdown-item" href="{% url 'fotos' %}">{% translate "Фотогалерея" %}</a>
                         </div>
                     </div>
 
@@ -112,22 +112,19 @@
 
                         <a class="  link " href="#" id="navbarDropdown3" role="button"
                            data-toggle="dropdown" aria-expanded="false">
-                            Деятельность
+                           {% translate "Деятельность" %}
                             <span class="pl-2 down">
                                         <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                                     </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="{% url 'science' %}">Научная деятельность</a>
-                            <a class="dropdown-item" href="{% url 'central_department' %}">Основные отделы</a>
-                            <a class="dropdown-item" href="{% url 'international_relationships' %}">Международные
-                                связи</a>
-                            <a class="dropdown-item" href="{% url 'spirtual_education' %}">Духовно-просветительская <br>
-                                деятельность</a>
-                            <a class="dropdown-item" href="{% url 'finans' %}">Финансовая деятельность</a>
-                            <a class="dropdown-item" href="{% url 'science' %}">Коммерциализация научных и <br>
-                                инновационных
-                                разработок</a>
+                            <a class="dropdown-item" href="{% url 'science' %}">{% translate "Научная деятельность" %}</a>
+                            <a class="dropdown-item" href="{% url 'central_department' %}">{% translate "Основные отделы" %}</a>
+                            <a class="dropdown-item" href="{% url 'international_relationships' %}">{% translate "Международные связи" %}</a>
+                            <a class="dropdown-item" href="{% url 'spirtual_education' %}">{% translate "Духовно-просветительская" %} <br> {% translate "деятельность" %}</a>
+                            <a class="dropdown-item" href="{% url 'finans' %}">{% translate "Финансовая деятельность" %}</a>
+                            <a class="dropdown-item" href="{% url 'science' %}">{% translate "Коммерциализация научных и" %} <br>
+                                {% translate "инновационных разработок" %}</a>
                         </div>
                     </div>
 
@@ -135,16 +132,16 @@
 
                         <a class="  link " href="#" id="navbarDropdown4" role="button"
                            data-toggle="dropdown" aria-expanded="false">
-                            Студенты
+                           {% translate "Студенты" %}
                             <span class="pl-2 down">
                                          <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                                      </span>
                         </a>
                         <div class="dropdown-menu last" aria-labelledby="navbarDropdown4">
-                            <a class="dropdown-item" href="#">Одаренные студенты</a>
-                            <a class="dropdown-item" href="#">Степень бакалавра</a>
-                            <a class="dropdown-item" href="{% url 'magistr' %}">Степень магистра</a>
-                            <a class="dropdown-item" href="#">Иностранные студенты</a>
+                            <a class="dropdown-item" href="#">{% translate "Одаренные студенты" %}</a>
+                            <a class="dropdown-item" href="#">{% translate "Степень бакалавра" %}</a>
+                            <a class="dropdown-item" href="{% url 'magistr' %}">{% translate "Степень магистра" %}</a>
+                            <a class="dropdown-item" href="#">{% translate "Иностранные студенты" %}</a>
                         </div>
                     </div>
 
@@ -161,7 +158,7 @@
                 <div class="dropdown first">
                     <a class="nav-link  link " href="#" id="navbarDropdown11" role="button"
                        data-toggle="dropdown" aria-expanded="false">
-                        Новости
+                        {% translate "Новости" %}
                     </a>
                     <div class="dropdown-menu  " aria-labelledby="navbarDropdown11">
                         <a class="dropdown-item" href="#">События</a>
@@ -172,17 +169,17 @@
                 <div class="dropdown second">
                     <a class="nav-link  link " href="#" id="navbarDropdown22" role="button"
                        data-toggle="dropdown" aria-expanded="false">
-                        Институт
+                        {% translate "Институт" %}
                     </a>
                     <div class="dropdown-menu  " aria-labelledby="navbarDropdown22">
-                        <a class="dropdown-item" href="#">История института</a>
-                        <a class="dropdown-item" href="#">Положения института</a>
-                        <a class="dropdown-item" href="#">Руководство</a>
-                        <a class="dropdown-item" href="#">Основные отделы</a>
-                        <a class="dropdown-item" href="#">Факультеты</a>
-                        <a class="dropdown-item" href="#">Кафедры</a>
-                        <a class="dropdown-item" href="#">Фотогалерея</a>
-                        <a class="dropdown-item" href="#">Видеогалерея</a>
+                        <a class="dropdown-item" href="#">{% translate "История института" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Положения института" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Руководство" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Основные отделы" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Факультеты" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Кафедры" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Фотогалерея" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Видеогалерея" %}</a>
                     </div>
                 </div>
 
@@ -191,16 +188,15 @@
 
                     <a class="nav-link  link " href="#" id="navbarDropdown33" role="button"
                        data-toggle="dropdown" aria-expanded="false">
-                        Деятельность
+                        {% translate "Деятельность" %}
                     </a>
                     <div class="dropdown-menu  " aria-labelledby="navbarDropdown33">
-                        <a class="dropdown-item" href="#">Научная деятельность</a>
-                        <a class="dropdown-item" href="#">Основные отделы</a>
-                        <a class="dropdown-item" href="#">Международные связи</a>
-                        <a class="dropdown-item" href="#">Духовно-просветительская <br> деятельность</a>
-                        <a class="dropdown-item" href="#">Финансовая деятельность</a>
-                        <a class="dropdown-item" href="#">Коммерциализация научных и <br> инновационных
-                            разработок</a>
+                        <a class="dropdown-item" href="#">{% translate "Научная деятельность" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Основные отделы" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Международные связи" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Духовно-просветительская" %} <br> {% translate "деятельность" %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Финансовая деятельность</a>
+                        <a class="dropdown-item" href="#">{% translate "Коммерциализация научных и" %} <br> {% translate "инновационных разработок" %}</a>
                     </div>
                 </div>
 
@@ -208,24 +204,24 @@
 
                     <a class="nav-link  link " href="#" id="navbarDropdown44" role="button"
                        data-toggle="dropdown" aria-expanded="false">
-                        Студенты
+                        {% translate "Студенты" %}
                     </a>
                     <div class="dropdown-menu  " aria-labelledby="navbarDropdown44">
-                        <a class="dropdown-item" href="#">Одаренные студенты</a>
-                        <a class="dropdown-item" href="#">Степень бакалавра</a>
-                        <a class="dropdown-item" href="#">Степень магистра</a>
-                        <a class="dropdown-item" href="#">Иностранные студенты</a>
+                        <a class="dropdown-item" href="#">{% translate "Одаренные студенты %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Степень бакалавра %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Степень магистра %}</a>
+                        <a class="dropdown-item" href="#">{% translate "Иностранные студенты %}</a>
                     </div>
                 </div>
             </div>
 
             <div
                     class=" level22 d-flex justify-content-center align-items-center w-100 m-0 row row-cols-3 row-cols-sm-5 ">
-                <a class="link"> Документы </a>
-                <a class="link"> Законы </a>
-                <a class="link"> Указы </a>
-                <a class="link"> Программы </a>
-                <a class="link"> Связи </a>
+                <a class="link"> {% translate "Документы" %} </a>
+                <a class="link"> {% translate "Законы" %} </a>
+                <a class="link"> {% translate "Указы" %} </a>
+                <a class="link"> {% translate "Программы" %} </a>
+                <a class="link"> {% translate "Связи" %} </a>
             </div>
         </div>
     </div>

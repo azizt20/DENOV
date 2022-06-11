@@ -5,7 +5,7 @@
     <section class="section-external-department" id="top">
         <section class="section-departments">
             <div class="container-xl">
-                <h2 class="text-center title">SIRTQI BO’LIM</h2>
+                <h2 class="text-center title">{% translate "SIRTQI BO’LIM" %}</h2>
 
                 {% for c in content %}
                     <div class="row staff">
@@ -16,16 +16,16 @@
                         </div>
                         <div class="col-lg-8 infos">
                             <div class="info"><span>{{ c.position }} :</span> {{ c.full_name }}</div>
-                            <div class="info"><span>Qabul vaqti:</span> {{ c.time }}</div>
-                            <div class="info"><span>Telefon:</span> {{ c.phone }}</div>
-                            <div class="info"><span>E-mail:</span> {{ c.email }}</div>
-                            <div class="info"><span>Manzil:</span> {{ c.location }}</div>
+                            <div class="info"><span>{% translate "Qabul vaqti:" %}</span> {{ c.time }}</div>
+                            <div class="info"><span>{% translate "Telefon:" %}</span> {{ c.phone }}</div>
+                            <div class="info"><span>{% translate "E-mail:" %}</span> {{ c.email }}</div>
+                            <div class="info"><span>{% translate "Manzil:" %}</span> {{ c.location }}</div>
                         </div>
                     </div>
                 {% endfor %}
 
                                 <div class="text-center pt-5 border-top">
-                                    <a href="{% url 'home' %}" class="btn">На главную</a>
+                                    <a href="{% url 'home' %}" class="btn">{% translate "На главную" %}</a>
                                 </div>
             </div>
         </section>

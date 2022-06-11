@@ -5,7 +5,7 @@
     <section class="section-fotos" id="top">
         <section class="section-content">
             <div class="container-xl">
-                <h2 class="text-center title">FOTOGALEREYA</h2>
+                <h2 class="text-center title">{% translate "FOTOGALEREYA" %}</h2>
                 <div class="descr">
                     <img src="{% static 'img/fotoo.png' %}" class="img-fluid w-100" alt="">
                 </div>
@@ -29,7 +29,7 @@
 
                             </div>
                             <div class="text-center">
-                                <a href="{% url 'foto' c.id %}" class="btn my-5">Больше фотографий</a>
+                                <a href="{% url 'foto' c.id %}" class="btn my-5">{% translate "Больше фотографий" %}</a>
                             </div>
                         </div>
                     {% endfor %}

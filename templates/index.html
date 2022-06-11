@@ -8,7 +8,7 @@
             <div class="position-fixed d-flex justify-content-center align-items-center" id="anchor">
                 <a href="#news"
                    class=" text-white d-flex justify-content-center align-items-center text-decoration-none ">
-                    Узнайте больше
+                   {% translate "Узнайте больше" %}
                     <span class="pl-2 down">
                     <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                 </span>
@@ -19,8 +19,8 @@
         <section class="other-content">
 
             <section id="news" class="section-news container-xl text-center">
-                <h2 class="py-3">Новости института</h2>
-                <p>Последние новости связанные с нашим институтом</p>
+                <h2 class="py-3">{% translate "Новости института" %}</h2>
+                <p>{% translate "Последние новости связанные с нашим институтом" %}</p>
                 <div class="news text-left">
                     <div class="row">
 
@@ -60,7 +60,7 @@
                     </div>
 
                     <div  class="text-center">
-                        <a href="{% url 'news' %}" class="btn">Больше новостей</a>
+                        <a href="{% url 'news' %}" class="btn">{% translate "Больше новостей" %}</a>
                     </div>
                 </div>
             </section>
@@ -71,9 +71,9 @@
 
             <section class="section-university">
                 <div class="container-xl text-center position-relative">
-                    <h2 class="py-3">Наш институт</h2>
+                    <h2 class="py-3">{% translate "Наш институт" %}</h2>
 
-                    <p class="descr h3">Краткая информация об институте</p>
+                    <p class="descr h3">{% translate "Краткая информация об институте" %}</p>
 
                     <img src="{% static 'img/Logo.png' %}" class="position-absolute" width="150px" height="150px"
                          style="right: 0; top: 0; transform: translate(100%, 0);" alt="">
@@ -81,15 +81,15 @@
                     <div class="row row-cols-1 row-cols-md-3 for-border mx-0">
                         <div class="col text-center">
                             <h4>1000</h4>
-                            <p>студентов на всех факультетах</p>
+                            <p>{% translate "студентов на всех факультетах" %}</p>
                         </div>
                         <div class="col text-center">
                             <h4>100</h4>
-                            <p>преподавателей</p>
+                            <p>{% translate "преподавателей" %}</p>
                         </div>
                         <div class="col text-center">
                             <h4>10</h4>
-                            <p>кафедр на 3 факультетах</p>
+                            <p>{% translate "кафедр на 3 факультетах" %}</p>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@
                                 <div></div>
                                 <img src="{% static 'img/fak.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    ФАКУЛЬТЕТЫ
+                                    {% translate "ФАКУЛЬТЕТЫ" %}
                                 </div>
                             </div>
                         </a>
@@ -108,7 +108,7 @@
                                 <div></div>
                                 <img src="{% static 'img/sec.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    ОТДЕЛЕНИЯ
+                                    {% translate "ОТДЕЛЕНИЯ" %}
                                 </div>
                             </div>
                         </a>
@@ -117,7 +117,7 @@
                                 <div></div>
                                 <img src="{% static 'img/caf.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    КАФЕДРЫ
+                                    {% translate "КАФЕДРЫ" %}
                                 </div>
                             </div>
                         </a>
@@ -126,7 +126,7 @@
                                 <div></div>
                                 <img src="{% static 'img/stud.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    СТУДЕНТЫ
+                                    {% translate "СТУДЕНТЫ" %}
                                 </div>
                             </div>
                         </a>
@@ -135,7 +135,7 @@
                                 <div></div>
                                 <img src="{% static 'img/abit.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    АБИТУРИЕНТЫ
+                                    {% translate "АБИТУРИЕНТЫ" %}
                                 </div>
                             </div>
                         </a>
@@ -144,7 +144,7 @@
                                 <div></div>
                                 <img src="{% static 'img/doc.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-4">
-                                    ДОКУМЕНТЫ <br>ИНСТИТУТА
+                                    {% translate "ДОКУМЕНТЫ" %} <br>{% translate "ИНСТИТУТА" %}
                                 </div>
                             </div>
                         </a>
@@ -153,7 +153,7 @@
                                 <div></div>
                                 <img src="{% static 'img/ellib.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    ЭЛЕКТРОННАЯ<br>БИБЛИОТЕКА
+                                    {% translate "ЭЛЕКТРОННАЯ" %}<br>{% translate "БИБЛИОТЕКА" %}
                                 </div>
                             </div>
                         </a>
@@ -162,7 +162,7 @@
                                 <div></div>
                                 <img src="{% static 'img/hemis.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    HEMIS<br>STUDENT
+                                    {% translate "HEMIS" %}<br>{% translate "STUDENT" %}
                                 </div>
                             </div>
                         </a>
@@ -171,7 +171,7 @@
                                 <div></div>
                                 <img src="{% static 'img/hem.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    HEMIS
+                                    {% translate "HEMIS" %}
                                 </div>
                             </div>
                         </a>
@@ -180,7 +180,7 @@
                                 <div></div>
                                 <img src="{% static 'img/hem.png' %}" class="img-fluid pt-2" alt="">
                                 <div class="title pb-5">
-                                    ОБЪЯВЛЕНИЯ
+                                    {% translate "ОБЪЯВЛЕНИЯ" %}
                                 </div>
                             </div>
                         </a>
@@ -191,10 +191,10 @@
 
             <section class="section-fakultet">
                 <div class="container-xl text-center">
-                    <h2>Факультеты</h2>
+                    <h2>{% translate "Факультеты" %}</h2>
                     <p class="descr">
-                        Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
-                        tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi.
+                        {% translate "Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
+                        tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi." %}
                     </p>
 
                     <div class="row row-cols-1 row-cols-lg-3 list">
@@ -214,7 +214,7 @@
                     </div>
 
                     <div class="text-center">
-                        <a href="{% url 'facultets' %}" class="btn">Больше факультетов</a>
+                        <a href="{% url 'facultets' %}" class="btn">{% translate "Больше факультетов" %}</a>
                     </div>
                 </div>
             </section>
@@ -222,12 +222,12 @@
             <section class="section-info">
                 <div class="container-xl">
                     <h3 class="text-center">
-                        Полезная информация
+                        {% translate "Полезная информация" %}
                     </h3>
                     <div class="infos row row-cols-1 row-cols-lg-2">
                         <div class="col student text-center">
                             <h3 class="title-topic">
-                                Студентам
+                                {% translate "Студентам" %}
                             </h3>
                             <div class="info">
                                 <div class="title-about">
@@ -256,7 +256,7 @@
                         </div>
                         <div class="col pre-student text-center">
                             <h3 class="title-topic">
-                                Абитуриентам
+                                {% translate "Абитуриентам" %}
                             </h3>
                             <div class="info">
                                 <div class="title-about">
@@ -286,7 +286,7 @@
                     </div>
 
                     <div class="text-center">
-                        <div class="btn">Узнать больше подробностей</div>
+                        <div class="btn">{% translate "Узнать больше подробностей" %}</div>
                     </div>
 
                 </div>

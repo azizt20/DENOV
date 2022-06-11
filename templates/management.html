@@ -5,7 +5,7 @@
     <section class="section-management" id="top">
         <section class="section-content">
             <div class="container-xl">
-                <h2 class="text-center title">RAHBARIYAT</h2>
+                <h2 class="text-center title">{% translate "RAHBARIYAT" %}</h2>
 
                 {% for c in content %}
                     <div class="manager">
@@ -16,16 +16,16 @@
                             {{ c.full_name }}
                         </div>
                         <div class="infos">
-                            <div class="info"><span>Qabul kunlari:</span> {{ c.time }} </div>
-                            <div class="info"><span>Telefon:</span> {{ c.phone }} </div>
-                            <div class="info"><span>E-mail:</span> {{ c.email }} </div>
+                            <div class="info"><span>{% translate "Qabul kunlari:" %}</span> {{ c.time }} </div>
+                            <div class="info"><span>{% translate "Telefon:" %}</span> {{ c.phone }} </div>
+                            <div class="info"><span>{% translate "E-mail:" %}</span> {{ c.email }} </div>
                         </div>
                         <div class="img">
                             <img src="{{ c.image.url }}" class="img-fluid" alt="">
                         </div>
 
                         <div class="sub-title">
-                            MEHNAT FAOLIYATI
+                            {% translate "MEHNAT FAOLIYATI" %}
                         </div>
 
                         <div class="activities">
@@ -37,7 +37,7 @@
 
             </div>
             <div class="text-center mt-5">
-                <a href="#top" class="btn">Наверх</a>
+                <a href="#top" class="btn">{% translate "Наверх" %}</a>
             </div>
         </section>
 

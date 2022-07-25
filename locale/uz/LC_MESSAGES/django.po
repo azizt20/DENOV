@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-11 11:33+0500\n"
+"POT-Creation-Date: 2022-07-25 16:29+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,19 +215,19 @@ msgstr ""
 msgid "СТУДЕНТЫ"
 msgstr ""
 
-#: templates/footer.html:75 templates/navbar.html:141
+#: templates/footer.html:75 templates/navbar.html:141 templates/navbar.html:210
 msgid "Одаренные студенты"
 msgstr ""
 
-#: templates/footer.html:76 templates/navbar.html:142
+#: templates/footer.html:76 templates/navbar.html:142 templates/navbar.html:211
 msgid "Степень бакалавра"
 msgstr ""
 
-#: templates/footer.html:77 templates/navbar.html:143
+#: templates/footer.html:77 templates/navbar.html:143 templates/navbar.html:212
 msgid "Степень магистра"
 msgstr ""
 
-#: templates/footer.html:78 templates/navbar.html:144
+#: templates/footer.html:78 templates/navbar.html:144 templates/navbar.html:213
 msgid "Иностранные студенты"
 msgstr ""
 

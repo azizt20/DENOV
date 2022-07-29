@@ -8,7 +8,7 @@
             <div class="position-fixed d-flex justify-content-center align-items-center" id="anchor">
                 <a href="#news"
                    class=" text-white d-flex justify-content-center align-items-center text-decoration-none ">
-                   {% translate "Узнайте больше" %}
+                    {% translate "Узнайте больше" %}
                     <span class="pl-2 down">
                     <img src="{% static 'img/arrow.png' %}" class="img-fluid" alt="">
                 </span>
@@ -59,7 +59,7 @@
 
                     </div>
 
-                    <div  class="text-center">
+                    <div class="text-center">
                         <a href="{% url 'news' %}" class="btn">{% translate "Больше новостей" %}</a>
                     </div>
                 </div>
@@ -193,14 +193,14 @@
                 <div class="container-xl text-center">
                     <h2>{% translate "Факультеты 12312312313123" %}</h2>
                     <p class="descr">
-                        {% translate "Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan
-                        tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi." %}
+                        {% translate "Bizda faoliyat yuritayotgan fakultetlar haqida malumotlar olishingiz va ularning faoliyati bilan tanishishigiz mumkin bizning xodimlar doimo sizni qo’llab-quvatlaydi." %}
                     </p>
 
                     <div class="row row-cols-1 row-cols-lg-3 list">
                         {% for facultet in facultets %}
                             <div class="col">
-                                <a href="{% url 'facultets' %}?id={{ facultet.id }}" class="text-decoration-none box text-center w-100 h-100">
+                                <a href="{% url 'facultets' %}?id={{ facultet.id }}"
+                                   class="text-decoration-none box text-center w-100 h-100">
                                     <img src="{{ facultet.icon.url }}" class="img-fluid w-100" alt="">
                                     <div class="content">
                                         <div class="title ">

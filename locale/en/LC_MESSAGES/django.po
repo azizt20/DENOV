@@ -1,239 +1,271 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-25 16:29+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-07-26 06:18+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Unknown\n"
+"Language: zxx\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Loco-Source-Locale: uz_UZ\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/"
 
-#: templates/ad.html:25 templates/ads-category.html:34
+#: templates/ad.html:25 templates/ads-category.html:34 
 #: templates/news-category.html:34
 msgid "К объявлениям"
-msgstr ""
+msgstr "To ads"
 
 #: templates/ad.html:35 templates/ads-category.html:25 templates/ads.html:28
 msgid "Подробнее об объявлении >"
-msgstr ""
+msgstr "More about the ad >"
 
 #: templates/ads-category.html:9 templates/ads.html:9
 msgid "E`LONLAR"
-msgstr ""
+msgstr "ANNOUNCEMENTS"
 
 #: templates/ads-category.html:11 templates/ads.html:11
 msgid "Самые последние объявления нашего университета"
-msgstr ""
+msgstr "The latest announcements from our university"
 
 #: templates/central-department.html:8
 msgid "Markaz Bo'limlari"
-msgstr ""
+msgstr "Center Departments"
 
 #: templates/central-department.html:10
 msgid "Узнайте подробности"
-msgstr ""
+msgstr "Learn more"
 
 #: templates/central-department.html:58
 msgid "Bo‘lim boshlig‘i:"
-msgstr ""
+msgstr "Department head:"
 
-#: templates/central-department.html:59 templates/department.html:60
-#: templates/external-department.html:19 templates/facultets.html:63
+#: templates/central-department.html:59 templates/department.html:60 
+#: templates/external-department.html:19 templates/facultets.html:63 
 #: templates/facultets.html:127
 msgid "Qabul vaqti:"
-msgstr ""
+msgstr "Reception time:"
 
-#: templates/central-department.html:60 templates/department.html:61
-#: templates/external-department.html:20 templates/facultets.html:64
+#: templates/central-department.html:60 templates/department.html:61 
+#: templates/external-department.html:20 templates/facultets.html:64 
 #: templates/facultets.html:128 templates/management.html:20
 msgid "Telefon:"
 msgstr ""
+"\n"
+"Phone:"
 
-#: templates/central-department.html:61 templates/department.html:62
-#: templates/external-department.html:21 templates/facultets.html:65
+#: templates/central-department.html:61 templates/department.html:62 
+#: templates/external-department.html:21 templates/facultets.html:65 
 #: templates/facultets.html:129 templates/management.html:21
 msgid "E-mail:"
 msgstr ""
+"\n"
+"Email:"
 
 #: templates/central-department.html:62
 msgid "Web-sayt:"
-msgstr ""
+msgstr "Website:"
 
-#: templates/central-department.html:63 templates/department.html:63
-#: templates/external-department.html:22 templates/facultets.html:66
+#: templates/central-department.html:63 templates/department.html:63 
+#: templates/external-department.html:22 templates/facultets.html:66 
 #: templates/facultets.html:130
 msgid "Manzil:"
 msgstr ""
+"\n"
+"Address:"
 
-#: templates/central-department.html:71 templates/department.html:114
-#: templates/facultets.html:139 templates/international-relationships.html:56
-#: templates/magistr.html:21 templates/management.html:40
+#: templates/central-department.html:71 templates/department.html:114 
+#: templates/facultets.html:139 templates/international-relationships.html:56 
+#: templates/magistr.html:21 templates/management.html:40 
 #: templates/science.html:21
 msgid "Наверх"
 msgstr ""
+"\n"
+"Top"
 
 #: templates/decree.html:8
 msgid "Qarorlar"
 msgstr ""
+"\n"
+"Decisions"
 
 #: templates/decree.html:10 templates/regulations.html:10
 msgid "Ознакомьтесь с уставными документами нашего института"
-msgstr ""
+msgstr "Familiarize yourself with the statutory documents of our institute"
 
-#: templates/decree.html:33 templates/external-department.html:28
+#: templates/decree.html:33 templates/external-department.html:28 
 #: templates/facultets.html:38 templates/regulations.html:34
 msgid "На главную"
 msgstr ""
+"\n"
+"To main"
 
 #: templates/department.html:8
 msgid "КАФЕДРЫ ДТПИ"
 msgstr ""
+"\n"
+"DEPARTMENTS DTPI"
 
 #: templates/department.html:10
 msgid "Нажмите на кафедру, чтобы узнать подробности"
 msgstr ""
+"\n"
+"Click on the pulpit for details"
 
 #: templates/department.html:59
 msgid "kafedra mundiri :"
-msgstr ""
+msgstr "Head of Department:"
 
 #: templates/department.html:69
 msgid "Kafedra tarixi"
-msgstr ""
+msgstr "History of the department"
 
 #: templates/department.html:81 templates/facultets.html:81
 msgid "Больше информации о факультете"
-msgstr ""
+msgstr "More information about the faculty"
 
-#: templates/department.html:100 templates/enrollee.html:47
+#: templates/department.html:100 templates/enrollee.html:47 
 #: templates/facultets.html:100
 msgid "Свернуть"
-msgstr ""
+msgstr "Collapse"
 
 #: templates/external-department.html:8
 msgid "SIRTQI BO’LIM"
-msgstr ""
+msgstr "EXTERNAL DEPARTMENT"
 
 #: templates/facultets.html:8 templates/index.html:102
 msgid "ФАКУЛЬТЕТЫ"
 msgstr ""
+"\n"
+"FACULTIES"
 
 #: templates/facultets.html:62
 msgid "DEKAN:"
-msgstr ""
+msgstr "DEAN:"
 
 #: templates/facultets.html:114
 msgid "Администрация факультета:"
-msgstr ""
+msgstr "Faculty administration:"
 
 #: templates/footer.html:10
 msgid "ИНСТИТУТ"
-msgstr ""
+msgstr "INSTITUTE"
 
 #: templates/footer.html:13 templates/navbar.html:100 templates/navbar.html:175
 msgid "История института"
-msgstr ""
+msgstr "History of the Institute"
 
 #: templates/footer.html:16 templates/navbar.html:101 templates/navbar.html:176
 msgid "Положения института"
-msgstr ""
+msgstr "Institute Regulations"
 
 #: templates/footer.html:19 templates/navbar.html:102 templates/navbar.html:177
 msgid "Руководство"
-msgstr ""
+msgstr "Management"
 
-#: templates/footer.html:22 templates/navbar.html:103 templates/navbar.html:122
-#: templates/navbar.html:178 templates/navbar.html:195
+#: templates/footer.html:22 templates/navbar.html:103 
+#: templates/navbar.html:122 templates/navbar.html:178 
+#: templates/navbar.html:195
 msgid "Основные отделы"
-msgstr ""
+msgstr "Main departments"
 
-#: templates/footer.html:25 templates/index.html:194 templates/navbar.html:104
+#: templates/footer.html:25 templates/index.html:194 templates/navbar.html:104 
 #: templates/navbar.html:179
 msgid "Факультеты"
-msgstr ""
+msgstr "Faculties"
 
 #: templates/footer.html:28 templates/navbar.html:105 templates/navbar.html:180
 msgid "Кафедры"
-msgstr ""
+msgstr "Chairs"
 
-#: templates/footer.html:34 templates/news-category.html:9
+#: templates/footer.html:34 templates/news-category.html:9 
 #: templates/news.html:9
 msgid "НОВОСТИ"
 msgstr ""
+"\n"
+"NEWS"
 
 #: templates/footer.html:37 templates/navbar.html:80 templates/navbar.html:161
 msgid "Новости"
 msgstr ""
+"\n"
+"News"
 
 #: templates/footer.html:40 templates/navbar.html:87
 msgid "Объявления"
 msgstr ""
+"\n"
+"Ads"
 
 #: templates/footer.html:44
 msgid "ГАЛЕРЕЯ"
-msgstr ""
+msgstr "GALLERY"
 
 #: templates/footer.html:47 templates/navbar.html:106 templates/navbar.html:181
 msgid "Фотогалерея"
-msgstr ""
+msgstr "Photo gallery"
 
 #: templates/footer.html:50 templates/navbar.html:182
 msgid "Видеогалерея"
-msgstr ""
+msgstr "Video gallery"
 
 #: templates/footer.html:56
 msgid "ДЕЯТЕЛЬНОСТЬ"
 msgstr ""
+"\n"
+"ACTIVITY"
 
 #: templates/footer.html:59 templates/navbar.html:121 templates/navbar.html:194
 msgid "Научная деятельность"
 msgstr ""
+"\n"
+"Scientific activity"
 
 #: templates/footer.html:62 templates/navbar.html:123 templates/navbar.html:196
 msgid "Международные связи"
-msgstr ""
+msgstr "International relations"
 
 #: templates/footer.html:65 templates/navbar.html:125
 msgid "Финансовая деятельность"
-msgstr ""
+msgstr "Financial activities"
 
 #: templates/footer.html:68
 msgid "Коммерциализация научных и инновационных разработок"
-msgstr ""
+msgstr "Commercialization of scientific and innovative developments"
 
 #: templates/footer.html:74 templates/index.html:129
 msgid "СТУДЕНТЫ"
 msgstr ""
+"\n"
+"STUDENTS"
 
 #: templates/footer.html:75 templates/navbar.html:141 templates/navbar.html:210
 msgid "Одаренные студенты"
 msgstr ""
+"\n"
+"Gifted Students"
 
 #: templates/footer.html:76 templates/navbar.html:142 templates/navbar.html:211
 msgid "Степень бакалавра"
 msgstr ""
+"\n"
+"Bachelor degree"
 
 #: templates/footer.html:77 templates/navbar.html:143 templates/navbar.html:212
 msgid "Степень магистра"
-msgstr ""
+msgstr "Master's degree"
 
 #: templates/footer.html:78 templates/navbar.html:144 templates/navbar.html:213
 msgid "Иностранные студенты"
-msgstr ""
+msgstr "Foreign students"
 
 #: templates/footer.html:82
 msgid "ИНФОРМАЦИЯ"
-msgstr ""
+msgstr "INFORMATION"
 
 #: templates/footer.html:83 templates/navbar.html:20 templates/navbar.html:220
 msgid "Документы"
@@ -241,206 +273,225 @@ msgstr "Documents"
 
 #: templates/footer.html:84 templates/navbar.html:21 templates/navbar.html:221
 msgid "Законы"
-msgstr ""
+msgstr "Laws"
 
 #: templates/footer.html:85 templates/navbar.html:22 templates/navbar.html:222
 msgid "Указы"
-msgstr ""
+msgstr "Decrees"
 
 #: templates/footer.html:86 templates/navbar.html:23 templates/navbar.html:223
 msgid "Программы"
 msgstr ""
+"\n"
+"Programs"
 
 #: templates/footer.html:87 templates/navbar.html:24 templates/navbar.html:224
 msgid "Связи"
-msgstr ""
+msgstr "Connections"
 
 #: templates/footer.html:135
 msgid "Denov tadbirkorlik va pedagogika instituti"
-msgstr ""
+msgstr "Denov Institute of Entrepreneurship and Pedagogy"
 
 #: templates/fotos.html:8
 msgid "FOTOGALEREYA"
-msgstr ""
+msgstr "PHOTO GALLERY"
 
 #: templates/fotos.html:32
 msgid "Больше фотографий"
 msgstr ""
+"\n"
+"More photos"
 
 #: templates/index.html:11
 msgid "Узнайте больше"
 msgstr ""
+"\n"
+"Find out more"
 
 #: templates/index.html:22
 msgid "Новости института"
-msgstr ""
+msgstr "Institute news"
 
 #: templates/index.html:23
 msgid "Последние новости связанные с нашим институтом"
-msgstr ""
+msgstr "Latest news related to our institute"
 
 #: templates/index.html:63
 msgid "Больше новостей"
-msgstr ""
+msgstr "More news"
 
 #: templates/index.html:74
 msgid "Наш институт"
-msgstr ""
+msgstr "Our Institute"
 
 #: templates/index.html:76
 msgid "Краткая информация об институте"
-msgstr ""
+msgstr "Brief information about the institute"
 
 #: templates/index.html:84
 msgid "студентов на всех факультетах"
-msgstr ""
+msgstr "students in all faculties"
 
 #: templates/index.html:88
 msgid "преподавателей"
-msgstr ""
+msgstr "teachers"
 
 #: templates/index.html:92
 msgid "кафедр на 3 факультетах"
-msgstr ""
+msgstr "departments at 4 faculties"
 
 #: templates/index.html:111
 msgid "ОТДЕЛЕНИЯ"
-msgstr ""
+msgstr "OFFICES"
 
 #: templates/index.html:120
 msgid "КАФЕДРЫ"
-msgstr ""
+msgstr "DEPARTMENTS"
 
 #: templates/index.html:138
 msgid "АБИТУРИЕНТЫ"
-msgstr ""
+msgstr "APPLICANTS"
 
 #: templates/index.html:147
 msgid "ДОКУМЕНТЫ"
-msgstr ""
+msgstr "THE DOCUMENTS"
 
 #: templates/index.html:147
 msgid "ИНСТИТУТА"
 msgstr ""
+"\n"
+"INSTITUTE"
 
 #: templates/index.html:156
 msgid "ЭЛЕКТРОННАЯ"
-msgstr ""
+msgstr "ELECTRONIC"
 
 #: templates/index.html:156
 msgid "БИБЛИОТЕКА"
-msgstr ""
+msgstr "LIBRARY"
 
 #: templates/index.html:165 templates/index.html:174
 msgid "HEMIS"
-msgstr ""
+msgstr "HEMIS"
 
 #: templates/index.html:165
 msgid "STUDENT"
-msgstr ""
+msgstr "TALABA"
 
 #: templates/index.html:183
 msgid "ОБЪЯВЛЕНИЯ"
 msgstr ""
+"\n"
+"ADS"
 
 #: templates/index.html:217
 msgid "Больше факультетов"
-msgstr ""
+msgstr "More faculties"
 
 #: templates/index.html:225
 msgid "Полезная информация"
-msgstr ""
+msgstr "Useful information"
 
 #: templates/index.html:230
 msgid "Студентам"
-msgstr ""
+msgstr "Students"
 
 #: templates/index.html:259
 msgid "Абитуриентам"
-msgstr ""
+msgstr "Applicants"
 
 #: templates/index.html:289
 msgid "Узнать больше подробностей"
-msgstr ""
+msgstr "Find out more details"
 
 #: templates/international-relationships.html:8
 msgid "XALQARO ALOQALAR"
-msgstr ""
+msgstr "INTERNATIONAL RELATIONS"
 
 #: templates/management.html:8
 msgid "RAHBARIYAT"
 msgstr ""
+"\n"
+"LEADERSHIP"
 
 #: templates/management.html:19
 msgid "Qabul kunlari:"
-msgstr ""
+msgstr "Reception days:"
 
 #: templates/management.html:28
 msgid "MEHNAT FAOLIYATI"
-msgstr ""
+msgstr "LABOR ACTIVITY"
 
 #: templates/navbar.html:11
 msgid "tadbirkorlik va"
-msgstr ""
+msgstr "entrepreneurship and"
 
 #: templates/navbar.html:11
 msgid "pedagogika instituti"
-msgstr ""
+msgstr "Pedagogical Institute"
 
 #: templates/navbar.html:36
 msgid "Search"
-msgstr ""
+msgstr "Qidiruv"
 
 #: templates/navbar.html:86
 msgid "События"
 msgstr ""
+"\n"
+"Developments"
 
 #: templates/navbar.html:94 templates/navbar.html:172
 msgid "Институт"
-msgstr ""
+msgstr "Institute"
 
 #: templates/navbar.html:115 templates/navbar.html:191
 msgid "Деятельность"
 msgstr ""
+"\n"
+"Activity"
 
 #: templates/navbar.html:124 templates/navbar.html:197
 msgid "Духовно-просветительская"
-msgstr ""
+msgstr "Spiritual and educational"
 
 #: templates/navbar.html:124 templates/navbar.html:197
 msgid "деятельность"
 msgstr ""
+"\n"
+"activity"
 
 #: templates/navbar.html:126 templates/navbar.html:199
 msgid "Коммерциализация научных и"
-msgstr ""
+msgstr "Commercialization of scientific and"
 
 #: templates/navbar.html:127 templates/navbar.html:199
 msgid "инновационных разработок"
-msgstr ""
+msgstr "innovative developments"
 
 #: templates/navbar.html:135 templates/navbar.html:207
-#, fuzzy
 #| msgid "Документы"
 msgid "Студенты"
-msgstr "Documents"
+msgstr ""
+"\n"
+"students"
 
 #: templates/new.html:25
 msgid "К новости"
-msgstr ""
+msgstr "To the news"
 
 #: templates/new.html:35 templates/news-category.html:25
 msgid "Подробнее о новости >"
-msgstr ""
+msgstr "More about the news >"
 
 #: templates/news-category.html:11 templates/news.html:11
 msgid "Самые последние новости нашего университета"
-msgstr ""
+msgstr "The latest news from our university"
 
 #: templates/news.html:28
 msgid "Подробнее об новости >"
-msgstr ""
+msgstr "More about the news >"
 
 #: templates/regulations.html:8
 msgid "УСТАВ ИНСТИТУТА"
-msgstr ""
+msgstr "CHARTER OF THE INSTITUTE"

@@ -1,446 +1,457 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-25 16:29+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-07-26 05:25+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Unknown\n"
+"Language: zxx\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Loco-Source-Locale: uz_UZ\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/"
 
-#: templates/ad.html:25 templates/ads-category.html:34
+#: templates/ad.html:25 templates/ads-category.html:34 
 #: templates/news-category.html:34
 msgid "К объявлениям"
-msgstr ""
+msgstr "E'lonlarga"
 
 #: templates/ad.html:35 templates/ads-category.html:25 templates/ads.html:28
 msgid "Подробнее об объявлении >"
-msgstr ""
+msgstr "E'lonlar haqida batafsil "
 
 #: templates/ads-category.html:9 templates/ads.html:9
 msgid "E`LONLAR"
-msgstr ""
+msgstr "ОБЪЯВЛЕНИЯ"
 
 #: templates/ads-category.html:11 templates/ads.html:11
 msgid "Самые последние объявления нашего университета"
-msgstr ""
+msgstr "Universitetimizdan so'nggi e'lonlar"
 
 #: templates/central-department.html:8
 msgid "Markaz Bo'limlari"
-msgstr ""
+msgstr "Отделы центра"
 
 #: templates/central-department.html:10
 msgid "Узнайте подробности"
-msgstr ""
+msgstr "Ko'proq ma'lumot olish"
 
 #: templates/central-department.html:58
 msgid "Bo‘lim boshlig‘i:"
-msgstr ""
+msgstr "Начальник отдела:"
 
-#: templates/central-department.html:59 templates/department.html:60
-#: templates/external-department.html:19 templates/facultets.html:63
+#: templates/central-department.html:59 templates/department.html:60 
+#: templates/external-department.html:19 templates/facultets.html:63 
 #: templates/facultets.html:127
 msgid "Qabul vaqti:"
-msgstr ""
+msgstr "Время приема:"
 
-#: templates/central-department.html:60 templates/department.html:61
-#: templates/external-department.html:20 templates/facultets.html:64
+#: templates/central-department.html:60 templates/department.html:61 
+#: templates/external-department.html:20 templates/facultets.html:64 
 #: templates/facultets.html:128 templates/management.html:20
 msgid "Telefon:"
-msgstr ""
+msgstr "Телефон:"
 
-#: templates/central-department.html:61 templates/department.html:62
-#: templates/external-department.html:21 templates/facultets.html:65
+#: templates/central-department.html:61 templates/department.html:62 
+#: templates/external-department.html:21 templates/facultets.html:65 
 #: templates/facultets.html:129 templates/management.html:21
 msgid "E-mail:"
-msgstr ""
+msgstr "Эл. адрес:"
 
 #: templates/central-department.html:62
 msgid "Web-sayt:"
-msgstr ""
+msgstr "Веб-сайт:"
 
-#: templates/central-department.html:63 templates/department.html:63
-#: templates/external-department.html:22 templates/facultets.html:66
+#: templates/central-department.html:63 templates/department.html:63 
+#: templates/external-department.html:22 templates/facultets.html:66 
 #: templates/facultets.html:130
 msgid "Manzil:"
-msgstr ""
+msgstr "Адрес:"
 
-#: templates/central-department.html:71 templates/department.html:114
-#: templates/facultets.html:139 templates/international-relationships.html:56
-#: templates/magistr.html:21 templates/management.html:40
+#: templates/central-department.html:71 templates/department.html:114 
+#: templates/facultets.html:139 templates/international-relationships.html:56 
+#: templates/magistr.html:21 templates/management.html:40 
 #: templates/science.html:21
 msgid "Наверх"
-msgstr ""
+msgstr "Tepaga"
 
 #: templates/decree.html:8
 msgid "Qarorlar"
-msgstr ""
+msgstr "Решения"
 
 #: templates/decree.html:10 templates/regulations.html:10
 msgid "Ознакомьтесь с уставными документами нашего института"
-msgstr ""
+msgstr "Institutimizning nizom hujjatlari bilan tanishing"
 
-#: templates/decree.html:33 templates/external-department.html:28
+#: templates/decree.html:33 templates/external-department.html:28 
 #: templates/facultets.html:38 templates/regulations.html:34
 msgid "На главную"
-msgstr ""
+msgstr "Bosh sahifaga"
 
 #: templates/department.html:8
 msgid "КАФЕДРЫ ДТПИ"
-msgstr ""
+msgstr "DTPI KAFEDRALAR"
 
 #: templates/department.html:10
 msgid "Нажмите на кафедру, чтобы узнать подробности"
-msgstr ""
+msgstr "Tafsilotlar uchun minbar ustiga bosing"
 
 #: templates/department.html:59
 msgid "kafedra mundiri :"
-msgstr ""
+msgstr "завкафедра"
 
 #: templates/department.html:69
 msgid "Kafedra tarixi"
-msgstr ""
+msgstr "История кафедры"
 
 #: templates/department.html:81 templates/facultets.html:81
 msgid "Больше информации о факультете"
-msgstr ""
+msgstr "Fakultetlar haqida ko'proq ma'lumotlar"
 
-#: templates/department.html:100 templates/enrollee.html:47
+#: templates/department.html:100 templates/enrollee.html:47 
 #: templates/facultets.html:100
 msgid "Свернуть"
-msgstr ""
+msgstr "Yig'ib qoyish"
 
 #: templates/external-department.html:8
 msgid "SIRTQI BO’LIM"
-msgstr ""
+msgstr "ВНЕШНИЙ ОТДЕЛ"
 
 #: templates/facultets.html:8 templates/index.html:102
 msgid "ФАКУЛЬТЕТЫ"
-msgstr ""
+msgstr "FAKULTETLAR"
 
 #: templates/facultets.html:62
 msgid "DEKAN:"
-msgstr ""
+msgstr "ДЕКАН:"
 
 #: templates/facultets.html:114
 msgid "Администрация факультета:"
-msgstr ""
+msgstr "Fakultet boshqarmasi"
 
 #: templates/footer.html:10
 msgid "ИНСТИТУТ"
-msgstr ""
+msgstr "INSTITUT"
 
 #: templates/footer.html:13 templates/navbar.html:100 templates/navbar.html:175
 msgid "История института"
-msgstr ""
+msgstr "Institut tarixi"
 
 #: templates/footer.html:16 templates/navbar.html:101 templates/navbar.html:176
 msgid "Положения института"
-msgstr ""
+msgstr "Institut nizomi"
 
 #: templates/footer.html:19 templates/navbar.html:102 templates/navbar.html:177
 msgid "Руководство"
 msgstr ""
+"\n"
+"Boshqaruv"
 
-#: templates/footer.html:22 templates/navbar.html:103 templates/navbar.html:122
-#: templates/navbar.html:178 templates/navbar.html:195
+#: templates/footer.html:22 templates/navbar.html:103 
+#: templates/navbar.html:122 templates/navbar.html:178 
+#: templates/navbar.html:195
 msgid "Основные отделы"
-msgstr ""
+msgstr "Asosiy bo'limlar"
 
-#: templates/footer.html:25 templates/index.html:194 templates/navbar.html:104
+#: templates/footer.html:25 templates/index.html:194 templates/navbar.html:104 
 #: templates/navbar.html:179
 msgid "Факультеты"
-msgstr ""
+msgstr "Fakultetlar"
 
 #: templates/footer.html:28 templates/navbar.html:105 templates/navbar.html:180
 msgid "Кафедры"
-msgstr ""
+msgstr "Kafedralar"
 
-#: templates/footer.html:34 templates/news-category.html:9
+#: templates/footer.html:34 templates/news-category.html:9 
 #: templates/news.html:9
 msgid "НОВОСТИ"
-msgstr ""
+msgstr "YANGILIKLAR"
 
 #: templates/footer.html:37 templates/navbar.html:80 templates/navbar.html:161
 msgid "Новости"
-msgstr ""
+msgstr "Yangiliklar"
 
 #: templates/footer.html:40 templates/navbar.html:87
 msgid "Объявления"
-msgstr ""
+msgstr "E'lonlar"
 
 #: templates/footer.html:44
 msgid "ГАЛЕРЕЯ"
-msgstr ""
+msgstr "GALERIYA"
 
 #: templates/footer.html:47 templates/navbar.html:106 templates/navbar.html:181
 msgid "Фотогалерея"
-msgstr ""
+msgstr "Fotogaleriya"
 
 #: templates/footer.html:50 templates/navbar.html:182
 msgid "Видеогалерея"
-msgstr ""
+msgstr "Videogaleriya"
 
 #: templates/footer.html:56
 msgid "ДЕЯТЕЛЬНОСТЬ"
-msgstr ""
+msgstr "FAOLIYAT"
 
 #: templates/footer.html:59 templates/navbar.html:121 templates/navbar.html:194
 msgid "Научная деятельность"
 msgstr ""
+"\n"
+"Ilmiy faoliyat"
 
 #: templates/footer.html:62 templates/navbar.html:123 templates/navbar.html:196
 msgid "Международные связи"
-msgstr ""
+msgstr "Xalqaro aloqalar"
 
 #: templates/footer.html:65 templates/navbar.html:125
 msgid "Финансовая деятельность"
-msgstr ""
+msgstr "Moliyaviy faoliyat"
 
 #: templates/footer.html:68
 msgid "Коммерциализация научных и инновационных разработок"
-msgstr ""
+msgstr "Ilmiy va innovatsion ishlanmalarni tijoratlashtirish"
 
 #: templates/footer.html:74 templates/index.html:129
 msgid "СТУДЕНТЫ"
-msgstr ""
+msgstr "TALABALAR"
 
 #: templates/footer.html:75 templates/navbar.html:141 templates/navbar.html:210
 msgid "Одаренные студенты"
 msgstr ""
+"\n"
+"Iqtidorli talabalar"
 
 #: templates/footer.html:76 templates/navbar.html:142 templates/navbar.html:211
 msgid "Степень бакалавра"
-msgstr ""
+msgstr "Bakalavr diplomi"
 
 #: templates/footer.html:77 templates/navbar.html:143 templates/navbar.html:212
 msgid "Степень магистра"
 msgstr ""
+"\n"
+"Magistrlik darajasi"
 
 #: templates/footer.html:78 templates/navbar.html:144 templates/navbar.html:213
 msgid "Иностранные студенты"
-msgstr ""
+msgstr "Chet ellik talabalar"
 
 #: templates/footer.html:82
 msgid "ИНФОРМАЦИЯ"
-msgstr ""
+msgstr "MA'LUMOTLAR"
 
 #: templates/footer.html:83 templates/navbar.html:20 templates/navbar.html:220
 msgid "Документы"
-msgstr "Documentlar"
+msgstr "Dokumentlar"
 
 #: templates/footer.html:84 templates/navbar.html:21 templates/navbar.html:221
 msgid "Законы"
-msgstr ""
+msgstr "Qonunlar"
 
 #: templates/footer.html:85 templates/navbar.html:22 templates/navbar.html:222
 msgid "Указы"
-msgstr ""
+msgstr "Farmonlar"
 
 #: templates/footer.html:86 templates/navbar.html:23 templates/navbar.html:223
 msgid "Программы"
-msgstr ""
+msgstr "Dasturlar"
 
 #: templates/footer.html:87 templates/navbar.html:24 templates/navbar.html:224
 msgid "Связи"
-msgstr ""
+msgstr "Aloqa"
 
 #: templates/footer.html:135
 msgid "Denov tadbirkorlik va pedagogika instituti"
-msgstr ""
+msgstr "Деновский институт предпринимательства и педагогики"
 
 #: templates/fotos.html:8
 msgid "FOTOGALEREYA"
-msgstr ""
+msgstr "ФОТОГАЛЕРЕЯ"
 
 #: templates/fotos.html:32
 msgid "Больше фотографий"
-msgstr ""
+msgstr "Ko'proq rasmlar"
 
 #: templates/index.html:11
 msgid "Узнайте больше"
-msgstr ""
+msgstr "Batafsil ma'lumot oling"
 
 #: templates/index.html:22
 msgid "Новости института"
-msgstr ""
+msgstr "Institut yangiliklari"
 
 #: templates/index.html:23
 msgid "Последние новости связанные с нашим институтом"
-msgstr ""
+msgstr "Institutimiz bilan bog'liq so'nggi yangiliklar"
 
 #: templates/index.html:63
 msgid "Больше новостей"
-msgstr ""
+msgstr "Ko'proq ma'lumotlar"
 
 #: templates/index.html:74
 msgid "Наш институт"
-msgstr ""
+msgstr "Bizning institutimiz"
 
 #: templates/index.html:76
 msgid "Краткая информация об институте"
-msgstr ""
+msgstr "Institut haqida qisqacha ma'lumot"
 
 #: templates/index.html:84
 msgid "студентов на всех факультетах"
 msgstr ""
+"\n"
+"Barcha fakultetlarda talabalar"
 
 #: templates/index.html:88
 msgid "преподавателей"
-msgstr ""
+msgstr "o'qituvchilar"
 
 #: templates/index.html:92
 msgid "кафедр на 3 факультетах"
-msgstr ""
+msgstr "4 ta fakultetdagi kafedralar"
 
 #: templates/index.html:111
 msgid "ОТДЕЛЕНИЯ"
-msgstr ""
+msgstr "BO\"LIMLAR"
 
 #: templates/index.html:120
 msgid "КАФЕДРЫ"
-msgstr ""
+msgstr "KAFEDRALAR"
 
 #: templates/index.html:138
 msgid "АБИТУРИЕНТЫ"
-msgstr ""
+msgstr "ABITURIENT"
 
 #: templates/index.html:147
 msgid "ДОКУМЕНТЫ"
-msgstr ""
+msgstr "HUJJATLAR"
 
 #: templates/index.html:147
 msgid "ИНСТИТУТА"
 msgstr ""
+"\n"
+"INSTITUT"
 
 #: templates/index.html:156
 msgid "ЭЛЕКТРОННАЯ"
 msgstr ""
+"\n"
+"ELEKTRON"
 
 #: templates/index.html:156
 msgid "БИБЛИОТЕКА"
-msgstr ""
+msgstr "KUTUBXONA"
 
 #: templates/index.html:165 templates/index.html:174
 msgid "HEMIS"
-msgstr ""
+msgstr "HEMIS"
 
 #: templates/index.html:165
 msgid "STUDENT"
-msgstr ""
+msgstr "СТУДЕНТЫ"
 
 #: templates/index.html:183
 msgid "ОБЪЯВЛЕНИЯ"
-msgstr ""
+msgstr "E'LONLAR"
 
 #: templates/index.html:217
 msgid "Больше факультетов"
-msgstr ""
+msgstr "Fakultetlar haqida"
 
 #: templates/index.html:225
 msgid "Полезная информация"
-msgstr ""
+msgstr "Foydali ma'lumotlar"
 
 #: templates/index.html:230
 msgid "Студентам"
-msgstr ""
+msgstr "Talabalar"
 
 #: templates/index.html:259
 msgid "Абитуриентам"
-msgstr ""
+msgstr "Abityrientlarga"
 
 #: templates/index.html:289
 msgid "Узнать больше подробностей"
-msgstr ""
+msgstr "Batafsil ma'lumot bilan tanishing"
 
 #: templates/international-relationships.html:8
 msgid "XALQARO ALOQALAR"
-msgstr ""
+msgstr "МЕЖДУНАРОДНЫЕ СВЯЗИ"
 
 #: templates/management.html:8
 msgid "RAHBARIYAT"
-msgstr ""
+msgstr "РУКОВОДСТВО"
 
 #: templates/management.html:19
 msgid "Qabul kunlari:"
-msgstr ""
+msgstr "Дни приема:"
 
 #: templates/management.html:28
 msgid "MEHNAT FAOLIYATI"
-msgstr ""
+msgstr "ТРУДОВАЯ ДЕЯТЕЛЬНОСТЬ"
 
 #: templates/navbar.html:11
 msgid "tadbirkorlik va"
-msgstr ""
+msgstr "предпринимательство и"
 
 #: templates/navbar.html:11
 msgid "pedagogika instituti"
-msgstr ""
+msgstr "педагогический институт"
 
 #: templates/navbar.html:36
 msgid "Search"
-msgstr ""
+msgstr "поиск"
 
 #: templates/navbar.html:86
 msgid "События"
-msgstr ""
+msgstr "Ishlanmalar"
 
 #: templates/navbar.html:94 templates/navbar.html:172
 msgid "Институт"
-msgstr ""
+msgstr "Instituti"
 
 #: templates/navbar.html:115 templates/navbar.html:191
 msgid "Деятельность"
-msgstr ""
+msgstr "Faoliyat"
 
 #: templates/navbar.html:124 templates/navbar.html:197
 msgid "Духовно-просветительская"
-msgstr ""
+msgstr "Manaviy va marifiy"
 
 #: templates/navbar.html:124 templates/navbar.html:197
 msgid "деятельность"
-msgstr ""
+msgstr "faoliyat"
 
 #: templates/navbar.html:126 templates/navbar.html:199
 msgid "Коммерциализация научных и"
-msgstr ""
+msgstr "Ilmiy va"
 
 #: templates/navbar.html:127 templates/navbar.html:199
 msgid "инновационных разработок"
-msgstr ""
+msgstr "innovatsion ishlanmalar"
 
 #: templates/navbar.html:135 templates/navbar.html:207
-#, fuzzy
 #| msgid "Документы"
 msgid "Студенты"
-msgstr "Documentlar"
+msgstr "Talabalar"
 
 #: templates/new.html:25
 msgid "К новости"
-msgstr ""
+msgstr "Yangiliklarga"
 
 #: templates/new.html:35 templates/news-category.html:25
 msgid "Подробнее о новости >"
-msgstr ""
+msgstr "Yangiliklar haqida batafsil "
 
 #: templates/news-category.html:11 templates/news.html:11
 msgid "Самые последние новости нашего университета"
-msgstr ""
+msgstr "Universitetimizdagi so'nggi yangiliklar"
 
 #: templates/news.html:28
 msgid "Подробнее об новости >"
-msgstr ""
+msgstr "Yangiliklar haqida batafsil"
 
 #: templates/regulations.html:8
 msgid "УСТАВ ИНСТИТУТА"
-msgstr ""
+msgstr "INSTITUT USTAVI"
